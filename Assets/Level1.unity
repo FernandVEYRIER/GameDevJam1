@@ -149,6 +149,7 @@ GameObject:
   - 50: {fileID: 260316355}
   - 61: {fileID: 260316356}
   - 114: {fileID: 260316357}
+  - 114: {fileID: 260316358}
   m_Layer: 8
   m_Name: heroCharacter
   m_TagString: Untagged
@@ -220,7 +221,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -255,6 +256,21 @@ MonoBehaviour:
   groundCheck: {fileID: 882848063}
   Velocity: 300
   JumpForce: 60
+--- !u!114 &260316358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 260316351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c158c4040ab5e9148adfabc2a15b65f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 199754, guid: f20b6883cb973dc4c940722129cabe1f, type: 2}
+  startPos: {fileID: 1840824779}
+  bulletVelocity: 20
+  bulletDelay: .0500000007
 --- !u!1 &406730228
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +388,14 @@ Prefab:
     - target: {fileID: 192250, guid: 64c9c9a2091c73d4380779c58b02e27f, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092248, guid: 64c9c9a2091c73d4380779c58b02e27f, type: 2}
+      propertyPath: m_FixedAngle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 467418, guid: 64c9c9a2091c73d4380779c58b02e27f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.352999985
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9c9a2091c73d4380779c58b02e27f, type: 2}
@@ -1068,7 +1092,7 @@ Transform:
   m_PrefabInternal: {fileID: 469435066}
   m_GameObject: {fileID: 1840824778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.317999989, y: -.218999997, z: 0}
+  m_LocalPosition: {x: -.352999985, y: -.218999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 260316354}
