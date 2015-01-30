@@ -8,13 +8,9 @@ public class GameManager : MonoBehaviour {
 	public int score = 0;
 	public Text lives;
 	public Text scoreText;
+	public Image lifeBar;
 
-	void Start () {
-
-	}
-	
-
-	void Update () 
+	void Update() 
 	{
 		if (player == null)
 		{
@@ -22,6 +18,7 @@ public class GameManager : MonoBehaviour {
 			return;
 		}
 		lives.text = player.GetComponent<LifeAndAmmo>().lifePoints + " /  100";
+		lifeBar.fillAmount = player.GetComponent<LifeAndAmmo>().lifePoints / 100;
 		scoreText.text = "Score : " + score.ToString(); 
 	}
 

@@ -38,7 +38,6 @@ public class HeroController : MonoBehaviour {
 
 		if (Physics2D.OverlapCircle(groundCheck.position, 0.1f, WhatIsGround))
 		{
-			Debug.Log("ON THE GROUND");
 			isGrounded = true;
 		}
 		//sets anim and forces

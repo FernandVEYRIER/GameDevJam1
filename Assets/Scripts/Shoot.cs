@@ -12,7 +12,6 @@ public class Shoot : MonoBehaviour {
 
 	void Start()
 	{
-		Debug.Log(this.transform.GetComponentInParent<Transform>());
 		playerScale = this.transform.GetComponentInParent<Transform>();
 	}
 
