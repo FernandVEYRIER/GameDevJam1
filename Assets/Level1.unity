@@ -943,6 +943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 188918, guid: 751fc0d7c9aa12d4081c9f20836603a8, type: 2}
+  playerDestroy: {fileID: 406730228}
+  playerToControl: {fileID: 260316351}
   explosionSound: {fileID: 8300000, guid: 0bed2566595223445b658e3c4592324c, type: 3}
 --- !u!4 &1676129821
 Transform:
