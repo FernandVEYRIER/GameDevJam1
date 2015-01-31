@@ -5,6 +5,11 @@ public class HealthCrateBehaviour : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col)
 	{
+		if (col.collider.tag == "Player")
+		{
+			//add health
+			Destroy(this.gameObject);
+		}
 		if (col.collider.tag == "Ground")
 		{
 			this.rigidbody2D.isKinematic = true;
