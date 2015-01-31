@@ -35,6 +35,10 @@ public class GameManager : MonoBehaviour {
 			audio.PlayOneShot(deathSound);
 			GameObject.Find("CanvasPlayer").SetActive(false);
 			canvasMenu.SetActive(true);
+			if (PlayerPrefs.GetInt("Score") < score)
+			{
+				PlayerPrefs.SetInt("Score", score);
+			}
 		}
 	}
 
