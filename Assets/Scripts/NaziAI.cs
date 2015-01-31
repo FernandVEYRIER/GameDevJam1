@@ -21,6 +21,8 @@ public class NaziAI : MonoBehaviour {
 	void Start () 
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
+		if (player == null)
+			return;
 		vecDist = player.transform.position - this.transform.position;
 		leftBound = GameObject.Find("EndOfTerrainLeft").GetComponent<Transform>();
 		rightBound = GameObject.Find("EndOfTerrainRight").GetComponent<Transform>();
@@ -28,6 +30,10 @@ public class NaziAI : MonoBehaviour {
 	
 	void Update () 
 	{
+		if (player == null)
+		{
+			return;
+		}
 		//handle path
 		vecDist = player.transform.position - this.transform.position;
 		boundDistanceLeft =  Mathf.Abs (leftBound.position.x - this.transform.position.x);

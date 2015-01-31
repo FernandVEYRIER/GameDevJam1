@@ -7,8 +7,11 @@ public class GameManager : MonoBehaviour {
 	GameObject player;
 	public static int score = 0;
 	public Text lives;
+	int livesCount;
 	public Text scoreText;
 	public Image lifeBar;
+	public GameObject canvasMenu;
+	public AudioClip deathSound;
 
 	void Update() 
 	{
@@ -17,13 +20,26 @@ public class GameManager : MonoBehaviour {
 			player = GameObject.FindGameObjectWithTag("Player");
 			return;
 		}
+		livesCount = player.GetComponent<LifeAndAmmo>().lifePoints;
 		lives.text = player.GetComponent<LifeAndAmmo>().lifePoints + " /  100";
-		lifeBar.fillAmount = (float)player.GetComponent<LifeAndAmmo>().lifePoints / 100f;
-		scoreText.text = "Score : " + score.ToString(); 
+		lifeBar.fillAmount = (float) livesCount / 100f;
+		scoreText.text = "Score : " + score.ToString();
+		if (livesCount <= 0 && !canvasMenu.activeSelf)
+		{
+			Destroy(player);
+			audio.PlayOneShot(deathSound);
+			GameObject.Find("CanvasPlayer").SetActive(false);
+			canvasMenu.SetActive(true);
+		}
 	}
 
 	public void addScore(int points)
 	{
 		score += points;
+	}
+
+	public void OnFightClick()
+	{
+		Application.LoadLevel(Application.loadedLevel);
 	}
 }
