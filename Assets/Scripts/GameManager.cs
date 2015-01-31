@@ -13,6 +13,11 @@ public class GameManager : MonoBehaviour {
 	public GameObject canvasMenu;
 	public AudioClip deathSound;
 
+	void Start()
+	{
+		score = 0;
+	}
+
 	void Update() 
 	{
 		if (player == null)
