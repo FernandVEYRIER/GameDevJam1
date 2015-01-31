@@ -74,6 +74,47 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &4203282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4203284}
+  - 114: {fileID: 4203283}
+  m_Layer: 0
+  m_Name: FirstExplosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &4203283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 4203282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05269901f4504f9449bb24b6eea94d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 188918, guid: 751fc0d7c9aa12d4081c9f20836603a8, type: 2}
+  explosionSound: {fileID: 8300000, guid: 0bed2566595223445b658e3c4592324c, type: 3}
+--- !u!4 &4203284
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 4203282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .899999976, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &26089777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,8 +1825,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 188918, guid: 751fc0d7c9aa12d4081c9f20836603a8, type: 2}
-  playerDestroy: {fileID: 0}
-  playerToControl: {fileID: 260316351}
   explosionSound: {fileID: 8300000, guid: 0bed2566595223445b658e3c4592324c, type: 3}
 --- !u!4 &1676129821
 Transform:

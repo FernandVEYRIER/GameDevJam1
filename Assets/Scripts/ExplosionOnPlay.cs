@@ -4,15 +4,15 @@ using System.Collections;
 public class ExplosionOnPlay : MonoBehaviour {
 	
 	public GameObject explosionPrefab;
-	public GameObject playerDestroy;
-	public GameObject playerToControl;
+	//public GameObject playerDestroy;
+	//public GameObject playerToControl;
 	public AudioClip explosionSound;
 
-	public void OnPlayButton()
+	void Start()
 	{
 		StartCoroutine("explosions");
-		Destroy(playerDestroy);
-		playerToControl.SetActive(true);
+		//Destroy(playerDestroy);
+		//playerToControl.SetActive(true);
 		Destroy(this.gameObject, 2.4f);
 	}
 
