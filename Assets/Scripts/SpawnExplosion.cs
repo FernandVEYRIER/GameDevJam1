@@ -7,9 +7,15 @@ public class SpawnExplosion : MonoBehaviour {
 	public int			damage;
 	public GameObject	 	blastPrefab;
 	public float 			radius = 3f;
+	public AudioClip explosionSound;
+
+	void Start()
+	{
+		Invoke ("SpawnStuff", explosionSound.length);
+	}
 
 	//Grenade explosion
-	void OnDestroy()
+	void SpawnStuff()
 	{
 		//add sphere cast to destroy ennemies, and increase score
 		GameObject go = (GameObject) Instantiate(explosionPrefab, this.transform.position, Quaternion.identity);
@@ -27,7 +33,7 @@ public class SpawnExplosion : MonoBehaviour {
 			{
 				GameObject.FindWithTag("Player").GetComponent<LifeAndAmmo>().lifePoints -= damage;
 			}
-
+			Destroy(this.gameObject);
 		}
 	}
 }
