@@ -9,6 +9,7 @@ public class HeroController : MonoBehaviour {
 	public float JumpForce = 300f;
 
 	bool isGrounded;
+	bool canApplyForce = true;
 	int walkAnim;
 	int jumpAnim;
 	Animator anim;
@@ -41,8 +42,34 @@ public class HeroController : MonoBehaviour {
 			isGrounded = true;
 		}
 		//sets anim and forces
-		this.rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * Velocity, this.rigidbody2D.velocity.y);
+		if (canApplyForce)
+		{
+			this.rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * Velocity, this.rigidbody2D.velocity.y);
+		}
+
+		//set anims
 		anim.SetFloat(walkAnim, Mathf.Abs(Input.GetAxis("Horizontal")));
 		anim.SetBool(jumpAnim, isGrounded);
+	}
+
+	void OnCollisionStay2D(Collision2D col)
+	{
+		bool isOnGround = false;
+		ContactPoint2D[] allContacts;
+		allContacts = col.contacts;
+		foreach(ContactPoint2D contactPoint in allContacts)
+		{
+			if (contactPoint.normal == new Vector2(0, 1))
+			{
+				isOnGround = true;
+			}
+		}
+		canApplyForce = isOnGround;
+		Debug.Log(isOnGround);
+	}
+
+	void OnCollisionExit2D(Collision2D col)
+	{
+		canApplyForce = true;
 	}
 }
