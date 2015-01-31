@@ -551,7 +551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 4294964479
   groundCheck: {fileID: 882848063}
   Velocity: 400
   JumpForce: 100
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da3b67fe704ca1541881d7a438dc3d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grenadePrefab: {fileID: 148122, guid: c91b6f468e981844fb8ebfa3bacb940a, type: 2}
+  grenadePrefab: {fileID: 148122, guid: e100c14740b1bec4a9486b2e2899c18e, type: 2}
   grenadeStart: {fileID: 26089778}
   grenadeVelocity: 200
   grenadeExplosionDelay: 3

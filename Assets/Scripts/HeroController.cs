@@ -2,8 +2,12 @@
 using System.Collections;
 
 public class HeroController : MonoBehaviour {
-	//TODO: implement bullets
-	//change blast size
+	//TODO: save score
+	//warning bullets
+	//bazooka
+	//headseekers
+	//slowmotion
+	//event QTE
 
 	public LayerMask WhatIsGround;
 	public Transform groundCheck;
