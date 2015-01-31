@@ -31,6 +31,7 @@ GameObject:
   - 50: {fileID: 5041022}
   - 82: {fileID: 8244774}
   - 114: {fileID: 11421870}
+  - 114: {fileID: 11401396}
   m_Layer: 9
   m_Name: Suicide_man_0
   m_TagString: Enemy
@@ -177,6 +178,21 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11401396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4914dd5fcafaa49b5cffdfe5793323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 185230, guid: eaf39abb4087b15489b0598620492a27, type: 2}
+  damage: 30
+  blastPrefab: {fileID: 122138, guid: 6d5c9e84cc9e7f144834a4a8f65f206a, type: 2}
+  radius: 3
 --- !u!114 &11421870
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3,9 +3,10 @@ using System.Collections;
 
 public class SpawnExplosion : MonoBehaviour {
 
-	public GameObject explosionPrefab;
-	public GameObject blastPrefab;
-	public float radius = 3f;
+	public GameObject 		explosionPrefab;
+	public int			damage;
+	public GameObject	 	blastPrefab;
+	public float 			radius = 3f;
 
 	//Grenade explosion
 	void OnDestroy()
@@ -22,6 +23,11 @@ public class SpawnExplosion : MonoBehaviour {
 				GameManager.score += 100;
 				Destroy(col.collider2D.gameObject);
 			}
+			if (col.collider2D.tag == "Player")
+			{
+				GameObject.FindWithTag("Player").GetComponent<LifeAndAmmo>().lifePoints -= damage;
+			}
+
 		}
 		Destroy(go, 1f);
 	}
