@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class HeroController : MonoBehaviour {
-	//TODO: drop health crate
+	//TODO: implement bullets
 	//change blast size
 
 	public LayerMask WhatIsGround;
