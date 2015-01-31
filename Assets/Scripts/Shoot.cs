@@ -11,7 +11,8 @@ public class Shoot : MonoBehaviour {
 
 	//Delay he can toggle fire before reloading
 	public float ammoMagazine = 4f;
-	float currentAmmo;
+	[HideInInspector]
+	public float currentAmmo;
 	public float reloadDelay = 1f;
 	public AudioClip [] reloadSound;
 	public AudioClip clipReload;

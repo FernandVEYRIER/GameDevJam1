@@ -11,7 +11,6 @@ public class MissileLargeCollision : MonoBehaviour {
 		Collider2D[] cols = Physics2D.OverlapCircleAll(this.transform.position, 2);
 		foreach (Collider2D col in cols)
 		{
-			Debug.Log(col.collider2D.name);
 			if (col.collider2D.tag == "Player")
 			{
 				col.collider2D.GetComponent<LifeAndAmmo>().lifePoints -= 10;
