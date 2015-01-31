@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour {
 
 	void Start () 
 	{
-		audio.PlayOneShot(audioClips[0]);
+		audio.PlayOneShot(audioClips[0], 3f);
 	}
 	
 	void Update () 
