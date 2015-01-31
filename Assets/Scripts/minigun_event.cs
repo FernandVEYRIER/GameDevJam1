@@ -10,25 +10,29 @@ public class minigun_event : MonoBehaviour {
 	private float		alpha = 255;
 	private Color		col;
 	private float		timer;
-	// Use this for initialization
+
 	void Start ()
 	{
 		col = gameObject.GetComponent<SpriteRenderer> ().material.color;
+		StartCoroutine(changeAlpha());
 	}
 	
-	// Update is called once per frame
-	void Update () 
+	IEnumerator changeAlpha()
 	{
-		timer += Time.deltaTime;
-		if (timer == 0)
-			gameObject.GetComponent<SpriteRenderer> ().material.color = Color.Lerp(col, new Color(col.r, col.g, col.b, 0), delay_warning);
-		if (timer >= delay_warning)
-			gameObject.GetComponent<SpriteRenderer> ().material.color = Color.Lerp(new Color(col.r, col.g, col.b, 0), col, delay_warning);
-		if (timer >= delay_warning)
+		bool decrease = true;
+		float alpha = 1;
+		while (true)
 		{
-			activate = false;
+			gameObject.GetComponent<SpriteRenderer> ().material.color = new Color(col.r, col.g, col.b, alpha);
+			if (decrease)
+				alpha -= 0.05f;
+			else
+				alpha += 0.05f;
+			if (alpha <= 0)
+				decrease = false;
+			if (alpha >= 1)
+				decrease = true;
+			yield return new WaitForSeconds(0.01f);
 		}
-		if (timer == 0)
-			activate = true;
 	}
 }

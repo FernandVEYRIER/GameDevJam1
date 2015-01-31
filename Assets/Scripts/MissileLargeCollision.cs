@@ -6,6 +6,7 @@ public class MissileLargeCollision : MonoBehaviour {
 	public GameObject 	bigExplosionPrefab;
 	public AudioClip 	explosionSound;
 	public int			damage = 20;
+
 	void OnTriggerEnter2D(Collider2D colli)
 	{
 		Collider2D[] cols = Physics2D.OverlapCircleAll(this.transform.position, 2);

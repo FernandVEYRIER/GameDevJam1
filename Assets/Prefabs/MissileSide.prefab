@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.04702473, y: -1.90485692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: .515789449, y: .415789455}
   m_Center: {x: 0, y: 0}
 --- !u!82 &8230846
 AudioSource:
@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bigExplosionPrefab: {fileID: 194180, guid: a6d826c5d18a76b408a2995878abea34, type: 2}
   explosionSound: {fileID: 8300000, guid: 659cc1e2d62658f4a953747ed0c0e4b6, type: 3}
+  damage: 20
 --- !u!212 &21258010
 SpriteRenderer:
   m_ObjectHideFlags: 1
