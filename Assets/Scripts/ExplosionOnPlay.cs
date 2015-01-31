@@ -4,16 +4,12 @@ using System.Collections;
 public class ExplosionOnPlay : MonoBehaviour {
 	
 	public GameObject explosionPrefab;
-	//public GameObject playerDestroy;
-	//public GameObject playerToControl;
 	public AudioClip explosionSound;
 
 	void Start()
 	{
 		StartCoroutine("explosions");
-		//Destroy(playerDestroy);
-		//playerToControl.SetActive(true);
-		Destroy(this.gameObject, 2.4f);
+		Destroy(this.gameObject, 2.7f);
 	}
 
 	IEnumerator explosions()
@@ -22,9 +18,11 @@ public class ExplosionOnPlay : MonoBehaviour {
 		{
 			GameObject go = (GameObject) Instantiate(explosionPrefab, Random.insideUnitCircle, Quaternion.identity);
 			audio.PlayOneShot(explosionSound);
+			Destroy(go, 2f);
 			go.transform.SetParent(this.transform);
 			yield return new WaitForSeconds(0.01f);
 		}
+		Destroy(GameObject.Find("Explosion(Clone)"));
 	}
 
 	public void OnQuitButton()
