@@ -24,7 +24,6 @@ public class SpawnEnemyBottom : MonoBehaviour {
 				go.rigidbody2D.AddForce(this.transform.up * 600);
 			else
 				go.rigidbody2D.velocity = new Vector2(-100, 10);
-			Debug.Log(this.transform.up);
 		}
 	}
 }
