@@ -6,6 +6,7 @@ public class shoot_minigun : MonoBehaviour {
 	public GameObject	munition;
 	public GameObject 	origin_spawn;
 	public GameObject 	origin_spawn1;
+	public GameObject	minigun;
 	public float		speed_bullet;
 	public float		up;
 	public float		speed_attack;
@@ -36,6 +37,7 @@ public class shoot_minigun : MonoBehaviour {
 	IEnumerator delay ()
 	{
 		stop = true;
+		GameObject eventm = (GameObject)Instantiate ( minigun, new Vector3(8.5f, 3.5f, 0), transform.rotation);
 		yield return new WaitForSeconds (Random.Range(8, 15));
 		stop = false;
 	}

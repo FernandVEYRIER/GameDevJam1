@@ -2,10 +2,7 @@
 using System.Collections;
 
 public class minigun_event : MonoBehaviour {
-
-	public float	 	delay_warning;
-	public GameObject	origin_event;
-	public Sprite		sprite;		
+	
 	private bool		activate = true;
 	private float		alpha = 255;
 	private Color		col;
@@ -15,6 +12,7 @@ public class minigun_event : MonoBehaviour {
 	{
 		col = gameObject.GetComponent<SpriteRenderer> ().material.color;
 		StartCoroutine(changeAlpha());
+		Destroy (gameObject, 4);
 	}
 	
 	IEnumerator changeAlpha()
