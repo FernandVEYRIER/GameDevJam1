@@ -6,4 +6,5 @@ Le thème était *"environnement hostile"*, venez vivre l'expérience d'un homme
 Squad :
 
 Nicolas Constanty, programmeur et graphiste
+
 Fernand Veyrier, programmeur
