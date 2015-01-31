@@ -4,10 +4,10 @@ using System.Collections;
 public class SpawnExplosion : MonoBehaviour {
 
 	public GameObject 		explosionPrefab;
-	public int			damage;
+	public int						damage;
 	public GameObject	 	blastPrefab;
-	public float 			radius = 3f;
-	public AudioClip explosionSound;
+	public float 				radius = 3f;
+	public AudioClip			explosionSound;
 
 	void Start()
 	{

@@ -71,7 +71,7 @@ MonoBehaviour:
   explosionPrefab: {fileID: 185230, guid: eaf39abb4087b15489b0598620492a27, type: 2}
   damage: 10
   blastPrefab: {fileID: 122138, guid: 6d5c9e84cc9e7f144834a4a8f65f206a, type: 2}
-  radius: 3
+  radius: 2
   explosionSound: {fileID: 8300000, guid: ae38138934315ea44991a78aa2ee97f9, type: 3}
 --- !u!212 &21248122
 SpriteRenderer:

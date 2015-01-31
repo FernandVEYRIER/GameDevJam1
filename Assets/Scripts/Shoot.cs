@@ -34,13 +34,14 @@ public class Shoot : MonoBehaviour {
 			lastShot = bulletDelay;
 			GameObject go = (GameObject) Instantiate(bullet, startPos.position, Quaternion.identity);
 			go.rigidbody2D.velocity = new Vector2(bulletVelocity * -playerScale.localScale.x, 0);
-			audio.PlayOneShot(shootSound, 0.5f);
+			audio.PlayOneShot(shootSound, 0.3f);
 			Destroy(go, 2f);
 		}
 		if (currentAmmo <= 0 && lastShot < 0)
 		{
 			//disable shot while reloading
-			audio.PlayOneShot( reloadSound[Random.Range(0, reloadSound.Length)] );
+			int audioToPlay = Random.Range(0, reloadSound.Length);
+			audio.PlayOneShot( reloadSound[audioToPlay], (audioToPlay == 0) ? 0.3f : 2.5f );
 			lastShot = 999;
 			Invoke("reloadWeapon", reloadDelay);
 		}

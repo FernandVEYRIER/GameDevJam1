@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class HeroController : MonoBehaviour {
+	//TODO: add remaining bullets
+	//missiles do damage
+	//change blast size
 
 	public LayerMask WhatIsGround;
 	public Transform groundCheck;
