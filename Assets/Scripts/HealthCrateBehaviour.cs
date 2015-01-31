@@ -17,7 +17,7 @@ public class HealthCrateBehaviour : MonoBehaviour {
 		{
 			this.rigidbody2D.isKinematic = true;
 			this.collider2D.isTrigger  = true;
-			Destroy(GameObject.Find("Parachute_0"));
+			Destroy(this.transform.GetChild(0).gameObject);
 			Destroy(this.gameObject, persistence);
 		}
 	}
