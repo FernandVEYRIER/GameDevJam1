@@ -7,7 +7,7 @@ public class DestroyBullet : MonoBehaviour {
 	{
 		if (col.collider2D.tag == "Player")
 		{
-			col.collider2D.GetComponent<LifeAndAmmo>().lifePoints--;
+			col.collider2D.GetComponent<LifeAndAmmo>().lifePoints -= 3;
 		}
 		else if (col.collider2D.tag == "Enemy")
 		{

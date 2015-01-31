@@ -84,7 +84,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 170874}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Size: {x: .566666663, y: .419999987}
   m_Center: {x: 0, y: .00999999978}
 --- !u!95 &9570876
@@ -113,6 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2080b31f828813e42803ccc8021a0324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeGiven: 10
+  persistence: 10
 --- !u!212 &21270874
 SpriteRenderer:
   m_ObjectHideFlags: 1
