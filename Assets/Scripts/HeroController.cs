@@ -4,7 +4,6 @@ using System.Collections;
 public class HeroController : MonoBehaviour {
 	//TODO: drop health crate
 	//change blast size
-	//death sound
 
 	public LayerMask WhatIsGround;
 	public Transform groundCheck;
