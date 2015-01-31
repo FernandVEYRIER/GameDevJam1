@@ -53,7 +53,7 @@ public class Copter_script : MonoBehaviour {
 		activate = true;
 		GameObject tmpunit = (GameObject)Instantiate (unit, spawn_unit.transform.position, spawn_unit.transform.rotation);
 		if (right)
-						tmpunit.rigidbody2D.velocity = new Vector2 (speed, 0);
+			tmpunit.rigidbody2D.velocity = new Vector2 (speed, 0);
 		else 
 		{
 			tmpunit.transform.localScale = new Vector3(-1, 1, 1);

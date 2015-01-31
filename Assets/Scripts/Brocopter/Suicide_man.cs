@@ -16,9 +16,9 @@ public class Suicide_man : MonoBehaviour {
 	{
 	
 	}
-	void OnCollisionEnter2D(Collision2D coll) 
+	void OnTriggerEnter2D(Collider2D coll) 
 	{
-		if (coll.collider.tag != "Enemy")
+		if (coll.collider2D.tag != "Enemy")
 		{
 			audio.clip = death_sound;
 			GameObject death = (GameObject)Instantiate (death_event, transform.position, transform.rotation);
