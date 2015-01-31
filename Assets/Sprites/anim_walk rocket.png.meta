@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: dfeca416bc7b0ec4cbeda624497897ef
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: anim_walk rocket_0
+    21300002: anim_walk rocket_1
+    21300004: anim_walk rocket_2
+    21300006: anim_walk rocket_3
+    21300008: anim_walk rocket_4
+    21300010: anim_walk rocket_5
+    21300012: anim_walk rocket_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +32,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +49,76 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: anim_walk rocket_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 10
+        width: 75
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: anim_walk rocket_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 10
+        width: 75
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: anim_walk rocket_2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 10
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: anim_walk rocket_3
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 10
+        width: 75
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: anim_walk rocket_4
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 10
+        width: 76
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: anim_walk rocket_5
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 10
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: anim_walk rocket_6
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 10
+        width: 77
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
