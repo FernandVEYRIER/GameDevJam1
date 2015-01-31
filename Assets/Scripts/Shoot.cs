@@ -13,7 +13,7 @@ public class Shoot : MonoBehaviour {
 	public float ammoMagazine = 4f;
 	float currentAmmo;
 	public float reloadDelay = 1f;
-	public AudioClip reloadSound;
+	public AudioClip [] reloadSound;
 
 	public AudioClip shootSound;
 	Transform playerScale;
@@ -40,8 +40,8 @@ public class Shoot : MonoBehaviour {
 		if (currentAmmo <= 0 && lastShot < 0)
 		{
 			//disable shot while reloading
+			audio.PlayOneShot( reloadSound[Random.Range(0, reloadSound.Length)] );
 			lastShot = 999;
-			audio.PlayOneShot(reloadSound);
 			Invoke("reloadWeapon", reloadDelay);
 		}
 	}

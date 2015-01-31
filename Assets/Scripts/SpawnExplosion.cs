@@ -29,6 +29,5 @@ public class SpawnExplosion : MonoBehaviour {
 			}
 
 		}
-		Destroy(go, 1f);
 	}
 }
