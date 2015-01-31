@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class HeroController : MonoBehaviour {
-	//TODO: add remaining bullets
+	//TODO: drop health crate
 	//change blast size
 	//death sound
 

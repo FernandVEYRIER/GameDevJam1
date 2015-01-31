@@ -9,6 +9,7 @@ public class NaziAI : MonoBehaviour {
 	public float shootDelay = 2;
 	public int scoreReward = 100;
 	public float moveSpeed = 100f;
+	public AudioClip deathSound;
 
 	float lastShot = -1;
 	float boundDistanceLeft;
@@ -65,6 +66,7 @@ public class NaziAI : MonoBehaviour {
 		{
 			GameManager.score += scoreReward;
 			col.collider.GetComponent<LifeAndAmmo>().lifePoints -= 5;
+			audio.PlayOneShot(deathSound, 10f);
 			Destroy(this.gameObject);
 		}
 	}

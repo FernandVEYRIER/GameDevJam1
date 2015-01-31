@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class BulletGauge : MonoBehaviour {
 
 	Image bulletGauge;
-	float fillAmmount = 1;
 	float percentage;
 	GameObject player;
 

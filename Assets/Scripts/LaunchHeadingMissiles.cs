@@ -33,7 +33,7 @@ public class LaunchHeadingMissiles : MonoBehaviour {
 			this.transform.position = new Vector3
 				(
 					this.transform.position.x,
-					player.transform.position.y
+					player.transform.position.y + .3f
 				);
 			if (!warming)
 			{
