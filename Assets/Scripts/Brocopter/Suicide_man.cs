@@ -5,6 +5,7 @@ public class Suicide_man : MonoBehaviour {
 
 	public AudioClip	death_sound;
 	public GameObject	death_event;
+	public float		damage = 30;
 	// Use this for initialization
 	void Start ()
 	{
@@ -24,6 +25,14 @@ public class Suicide_man : MonoBehaviour {
 			GameObject death = (GameObject)Instantiate (death_event, transform.position, transform.rotation);
 			Destroy (death, audio.clip.length);
 			Destroy (gameObject);
+		}
+		Collider2D[] cols = Physics2D.OverlapCircleAll(this.transform.position, 2);
+		foreach (Collider2D col in cols)
+		{
+			if (col.collider2D.tag == "Player")
+			{
+				col.collider2D.GetComponent<LifeAndAmmo>().lifePoints -= 30;
+			}
 		}
 	}
 }

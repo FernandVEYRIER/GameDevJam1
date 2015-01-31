@@ -3,9 +3,9 @@ using System.Collections;
 
 public class MissileLargeCollision : MonoBehaviour {
 
-	public GameObject bigExplosionPrefab;
-	public AudioClip explosionSound;
-	
+	public GameObject 	bigExplosionPrefab;
+	public AudioClip 	explosionSound;
+	public int			damage = 20;
 	void OnTriggerEnter2D(Collider2D colli)
 	{
 		Collider2D[] cols = Physics2D.OverlapCircleAll(this.transform.position, 2);
@@ -13,7 +13,7 @@ public class MissileLargeCollision : MonoBehaviour {
 		{
 			if (col.collider2D.tag == "Player")
 			{
-				col.collider2D.GetComponent<LifeAndAmmo>().lifePoints -= 10;
+				col.collider2D.GetComponent<LifeAndAmmo>().lifePoints -= damage;
 			}
 		}
 		audio.PlayOneShot(explosionSound);
