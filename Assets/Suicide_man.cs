@@ -18,9 +18,12 @@ public class Suicide_man : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D coll) 
 	{
-		audio.clip = death_sound;
-		GameObject death = (GameObject)Instantiate (death_event, transform.position, transform.rotation);
-		Destroy (death, audio.clip.length - 2.5f);
-		Destroy (gameObject);
+		if (coll.collider.tag != "Enemy")
+		{
+			audio.clip = death_sound;
+			GameObject death = (GameObject)Instantiate (death_event, transform.position, transform.rotation);
+			Destroy (death, audio.clip.length);
+			Destroy (gameObject);
+		}
 	}
 }

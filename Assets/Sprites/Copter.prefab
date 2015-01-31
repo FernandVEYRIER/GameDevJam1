@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab6bdcb94b6b9942b23031acaff0881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  munition: {fileID: 0}
+  munition: {fileID: 178574, guid: 03e9e31077c9dac4986d9711db3761b9, type: 2}
   unit: {fileID: 141838, guid: 73d99cd7c994ff443bc46b26ac3956a6, type: 2}
   speed: 1
   speed_unit: 5

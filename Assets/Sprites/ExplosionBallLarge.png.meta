@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 3dcf5a814da3d4049bafbea36dc7a6c3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ExplosionBallLarge_2
+    21300002: ExplosionBallLarge_3
+    21300004: ExplosionBallLarge_4
+    21300006: ExplosionBallLarge_5
+    21300008: ExplosionBallLarge_6
+    21300010: ExplosionBallLarge_7
+    21300012: ExplosionBallLarge_8
+    21300014: ExplosionBallLarge_9
+    21300016: ExplosionBallLarge_10
+    21300018: ExplosionBallLarge_11
+    21300020: ExplosionBallLarge_12
+    21300022: ExplosionBallLarge_13
+    21300024: ExplosionBallLarge_14
+    21300026: ExplosionBallLarge_15
+    21300028: ExplosionBallLarge_16
+    21300030: ExplosionBallLarge_17
+    21300032: ExplosionBallLarge_18
+    21300034: ExplosionBallLarge_19
+    21300036: ExplosionBallLarge_20
+    21300038: ExplosionBallLarge_21
+    21300040: ExplosionBallLarge_22
+    21300042: ExplosionBallLarge_23
+    21300044: ExplosionBallLarge_24
+    21300046: ExplosionBallLarge_25
+    21300048: ExplosionBallLarge_53
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 20
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ExplosionBallLarge_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 23
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 23
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 21
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 21
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_6
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 19
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 19
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 17
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_9
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 15
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_10
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 15
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_11
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 13
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_12
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 13
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_13
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 11
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_14
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 11
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_15
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 9
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_16
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 9
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_17
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 7
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_18
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 7
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_19
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 3
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_20
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 3
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_21
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_22
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 1
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_23
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 0
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_24
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 0
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_25
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 0
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExplosionBallLarge_53
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 55
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
