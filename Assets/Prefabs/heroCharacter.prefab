@@ -8,8 +8,23 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 467418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &186310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486310}
+  m_Layer: 0
+  m_Name: GrenadeStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23,7 +38,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 492248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,9 +58,12 @@ GameObject:
   - 50: {fileID: 5092248}
   - 61: {fileID: 6192248}
   - 114: {fileID: 11492248}
-  m_Layer: 0
+  - 114: {fileID: 11428630}
+  - 114: {fileID: 11428632}
+  - 114: {fileID: 11486310}
+  m_Layer: 8
   m_Name: heroCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,11 +75,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.317999989, y: -.218999997, z: 0}
+  m_LocalPosition: {x: -.352999985, y: -.218999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 492250}
   m_RootOrder: 1
+--- !u!4 &486310
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186310}
+  m_LocalRotation: {x: 0, y: 0, z: -.355459362, w: .934691787}
+  m_LocalPosition: {x: -.522000015, y: .162, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 492250}
+  m_RootOrder: 2
 --- !u!4 &492248
 Transform:
   m_ObjectHideFlags: 1
@@ -69,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.5, z: 0}
+  m_LocalPosition: {x: 0, y: -.439999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 492250}
@@ -81,11 +111,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: .973999977, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 492248}
   - {fileID: 467418}
+  - {fileID: 486310}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5092248
@@ -98,7 +129,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -129,6 +160,51 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11428630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c158c4040ab5e9148adfabc2a15b65f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 199754, guid: f20b6883cb973dc4c940722129cabe1f, type: 2}
+  startPos: {fileID: 467418}
+  bulletVelocity: 20
+  bulletDelay: .0500000007
+--- !u!114 &11428632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b994c81d3b47d04cade99a178c81489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifePoints: 100
+  ammo: 10
+  WhatIsEnemy:
+  - Enemy
+--- !u!114 &11486310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3b67fe704ca1541881d7a438dc3d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadePrefab: {fileID: 148122, guid: c91b6f468e981844fb8ebfa3bacb940a, type: 2}
+  grenadeStart: {fileID: 486310}
+  grenadeVelocity: 400
+  grenadeExplosionDelay: 3
 --- !u!114 &11492248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +221,7 @@ MonoBehaviour:
     m_Bits: 4294967039
   groundCheck: {fileID: 492248}
   Velocity: 300
-  JumpForce: 70
+  JumpForce: 60
 --- !u!212 &21292248
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -22,7 +22,6 @@ public class Shoot : MonoBehaviour {
 		{
 			lastShot = bulletDelay;
 			GameObject go = (GameObject) Instantiate(bullet, startPos.position, Quaternion.identity);
-			Debug.Log(this.transform.right);
 			go.rigidbody2D.velocity = new Vector2(bulletVelocity * -playerScale.localScale.x, 0);
 			Destroy(go, 2f);
 		}
