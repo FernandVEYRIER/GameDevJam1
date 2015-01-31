@@ -240,6 +240,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 11432250, guid: 0be00720ffbc54d4183669c2cd6faa2d, type: 2}
+      propertyPath: minigun
+      value: 
+      objectReference: {fileID: 147892, guid: 938ffad81ab2e784ba910d9179d248a7, type: 2}
+    - target: {fileID: 11432250, guid: 0be00720ffbc54d4183669c2cd6faa2d, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0be00720ffbc54d4183669c2cd6faa2d, type: 2}
   m_RootGameObject: {fileID: 1988683691}
@@ -3771,6 +3779,7 @@ MonoBehaviour:
   speed_bullet: .00100000005
   up: 24
   speed_attack: 8
+  minigun: {fileID: 147892, guid: 938ffad81ab2e784ba910d9179d248a7, type: 2}
 --- !u!1 &2045436121
 GameObject:
   m_ObjectHideFlags: 0

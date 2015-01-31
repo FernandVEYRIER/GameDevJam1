@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class shoot_minigun : MonoBehaviour {
 	
@@ -12,6 +13,7 @@ public class shoot_minigun : MonoBehaviour {
 	private bool		activate = false;
 	private bool		stop;
 	private Vector3		save_vec;
+	public GameObject	minigun;
 	// Use this for initialization
 	void Awake () 
 	{
@@ -36,6 +38,7 @@ public class shoot_minigun : MonoBehaviour {
 	IEnumerator delay ()
 	{
 		stop = true;
+		GameObject eventm = (GameObject)Instantiate ( minigun, new Vector3(7f, 3.5f, 0), transform.rotation);
 		yield return new WaitForSeconds (Random.Range(8, 15));
 		stop = false;
 	}

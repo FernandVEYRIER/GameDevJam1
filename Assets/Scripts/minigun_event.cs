@@ -1,20 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class minigun_event : MonoBehaviour {
-
-	public float	 	delay_warning;
-	public GameObject	origin_event;
-	public Sprite		sprite;		
-	private bool		activate = true;
+	
 	private float		alpha = 255;
 	private Color		col;
-	private float		timer;
 
 	void Start ()
 	{
-		col = gameObject.GetComponent<SpriteRenderer> ().material.color;
+		col = this.gameObject.GetComponent<SpriteRenderer> ().material.color;
 		StartCoroutine(changeAlpha());
+		Destroy(gameObject, 3f);
 	}
 	
 	IEnumerator changeAlpha()
@@ -23,7 +20,7 @@ public class minigun_event : MonoBehaviour {
 		float alpha = 1;
 		while (true)
 		{
-			gameObject.GetComponent<SpriteRenderer> ().material.color = new Color(col.r, col.g, col.b, alpha);
+			this.gameObject.GetComponent<SpriteRenderer> ().material.color = new Color(col.r, col.g, col.b, alpha);
 			if (decrease)
 				alpha -= 0.05f;
 			else
