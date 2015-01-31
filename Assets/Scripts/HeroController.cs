@@ -65,7 +65,6 @@ public class HeroController : MonoBehaviour {
 			}
 		}
 		canApplyForce = isOnGround;
-		Debug.Log(isOnGround);
 	}
 
 	void OnCollisionExit2D(Collision2D col)

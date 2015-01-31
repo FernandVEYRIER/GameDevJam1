@@ -13,9 +13,9 @@ GameObject:
   - 50: {fileID: 5098258}
   - 61: {fileID: 6198258}
   - 114: {fileID: 11414920}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Nazi
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,9 +113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletVelocity: 20
-  bulletPrefab: {fileID: 199754, guid: f20b6883cb973dc4c940722129cabe1f, type: 2}
+  bulletPrefab: {fileID: 184722, guid: 972bddebe0fe24d4fbb42cbb63fb0107, type: 2}
   bulletStart: {fileID: 498258}
   shootDelay: 2
+  scoreReward: 100
+  moveSpeed: 1
 --- !u!212 &21239764
 SpriteRenderer:
   m_ObjectHideFlags: 1

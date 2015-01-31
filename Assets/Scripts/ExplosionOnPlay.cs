@@ -17,7 +17,7 @@ public class ExplosionOnPlay : MonoBehaviour {
 		for (int i = 0; i < 80; i++)
 		{
 			GameObject go = (GameObject) Instantiate(explosionPrefab, Random.insideUnitCircle, Quaternion.identity);
-			audio.PlayOneShot(explosionSound);
+			audio.PlayOneShot(explosionSound, 0.1f);
 			Destroy(go, 2f);
 			go.transform.SetParent(this.transform);
 			yield return new WaitForSeconds(0.01f);
