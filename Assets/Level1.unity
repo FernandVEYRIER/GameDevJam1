@@ -2148,6 +2148,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2045436123}
   - 82: {fileID: 2045436122}
+  - 114: {fileID: 2045436124}
   m_Layer: 0
   m_Name: _AudioManager
   m_TagString: Untagged
@@ -2167,7 +2168,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -2225,6 +2226,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &2045436124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045436121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fab7973bf60024e9aa898e08cec649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 59443dee59c08114fa18cd48def9834d, type: 3}
 --- !u!1 &2135308274
 GameObject:
   m_ObjectHideFlags: 0
