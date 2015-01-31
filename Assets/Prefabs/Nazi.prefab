@@ -178,6 +178,7 @@ MonoBehaviour:
   scoreReward: 100
   moveSpeed: 1
   deathSound: {fileID: 8300000, guid: e5512b72dec881b46ac598c4c03a67d3, type: 3}
+  bloodSplash: {fileID: 160964, guid: 862955fd14787ce4d9cf792868f123f9, type: 2}
 --- !u!212 &21239764
 SpriteRenderer:
   m_ObjectHideFlags: 1

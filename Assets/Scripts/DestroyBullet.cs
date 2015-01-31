@@ -3,6 +3,8 @@ using System.Collections;
 
 public class DestroyBullet : MonoBehaviour {
 
+	public GameObject bloodSplash;
+
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.collider2D.tag == "Player")
@@ -12,6 +14,8 @@ public class DestroyBullet : MonoBehaviour {
 		else if (col.collider2D.tag == "Enemy")
 		{
 			GameManager.score += 100;
+			if (col.collider2D.name == "Nazi(Clone)")
+				Destroy(Instantiate(bloodSplash, this.transform.position, Quaternion.identity), .5f);
 			Destroy(col.gameObject);
 		}
 		Destroy(this.gameObject);
