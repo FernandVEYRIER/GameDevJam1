@@ -39,7 +39,7 @@ public class Shoot : MonoBehaviour {
 			audio.PlayOneShot(shootSound, 0.3f);
 			Destroy(go, 2f);
 		}
-		if (currentAmmo <= 0 && lastShot < 0)
+		if (currentAmmo <= 0 && lastShot < 0 || (Input.GetKeyDown(KeyCode.R) && currentAmmo != ammoMagazine && lastShot < 0))
 		{
 			//disable shot while reloading, and play sounds
 			int audioToPlay = Random.Range(0, reloadSound.Length);

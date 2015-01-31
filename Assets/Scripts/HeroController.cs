@@ -7,6 +7,7 @@ public class HeroController : MonoBehaviour {
 	//headseekers
 	//slowmotion
 	//event QTE
+	//reload with r
 
 	public LayerMask WhatIsGround;
 	public Transform groundCheck;
