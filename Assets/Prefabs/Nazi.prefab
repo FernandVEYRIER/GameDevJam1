@@ -115,7 +115,7 @@ MonoBehaviour:
   bulletVelocity: 20
   bulletPrefab: {fileID: 184722, guid: 972bddebe0fe24d4fbb42cbb63fb0107, type: 2}
   bulletStart: {fileID: 498258}
-  shootDelay: 2
+  shootDelay: .600000024
   scoreReward: 100
   moveSpeed: 1
 --- !u!212 &21239764

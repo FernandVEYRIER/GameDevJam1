@@ -234,6 +234,9 @@ MonoBehaviour:
   startPos: {fileID: 467418}
   bulletVelocity: 20
   bulletDelay: .0500000007
+  ammoMagazine: .5
+  reloadDelay: 1.5
+  reloadSound: {fileID: 8300000, guid: 91e990cb5dcb1db4a97f17c97393a854, type: 3}
   shootSound: {fileID: 8300000, guid: 7f420ffb853081e458bf2305723f30ae, type: 3}
 --- !u!114 &11428632
 MonoBehaviour:

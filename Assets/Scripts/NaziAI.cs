@@ -50,11 +50,12 @@ public class NaziAI : MonoBehaviour {
 
 		//shoot handling
 		lastShot -= Time.deltaTime;
-		if (lastShot < 0)
+		if (lastShot < 0 && (vecDist.y <= 0.1 && vecDist.y >= -0.1))
 		{
 			lastShot = shootDelay;
 			GameObject go = Instantiate(bulletPrefab, bulletStart.transform.position, Quaternion.identity) as GameObject;
 			go.rigidbody2D.velocity = new Vector2(-bulletVelocity * this.transform.localScale.x, 0);
+			Destroy(go, 3f);
 		}
 	}
 
