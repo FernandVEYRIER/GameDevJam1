@@ -273,7 +273,7 @@ GameObject:
   - 4: {fileID: 130401952}
   - 114: {fileID: 130401949}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Eventminigun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,10 +574,12 @@ MonoBehaviour:
   bulletVelocity: 20
   bulletDelay: .0500000007
   ammoMagazine: .5
+  currentAmmo: 0
   reloadDelay: 1.5
   reloadSound:
   - {fileID: 8300000, guid: f114e6adb5a155040ac34f3fb90609f4, type: 3}
   - {fileID: 8300000, guid: 891d009713e695d408338f77c09e4ec4, type: 3}
+  clipReload: {fileID: 0}
   shootSound: {fileID: 8300000, guid: 7f420ffb853081e458bf2305723f30ae, type: 3}
 --- !u!114 &260316359
 MonoBehaviour:
@@ -3048,7 +3050,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1924339941}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Eventminigun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
