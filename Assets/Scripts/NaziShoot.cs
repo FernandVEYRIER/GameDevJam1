@@ -25,7 +25,7 @@ public class NaziShoot : MonoBehaviour {
 		{
 			lastShot = shootDelay;
 			GameObject go = Instantiate(bulletPrefab, bulletStart.transform.position, Quaternion.identity) as GameObject;
-			go.rigidbody2D.velocity = new Vector2(bulletVelocity, 0);
+			go.rigidbody2D.velocity = new Vector2(-bulletVelocity * this.transform.localScale.x, 0);
 		}
 	}
 }

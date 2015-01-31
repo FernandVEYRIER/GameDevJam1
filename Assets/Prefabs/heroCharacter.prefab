@@ -143,8 +143,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .547070086, y: .829999983}
-  m_Center: {x: -.0494608656, y: .0399999619}
+  m_Size: {x: .529999971, y: .879999995}
+  m_Center: {x: .00999999978, y: .0399999619}
 --- !u!95 &9592248
 Animator:
   serializedVersion: 3
@@ -220,7 +220,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967039
   groundCheck: {fileID: 492248}
-  Velocity: 300
+  Velocity: 400
   JumpForce: 60
 --- !u!212 &21292248
 SpriteRenderer:

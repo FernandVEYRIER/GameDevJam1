@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
 	GameObject player;
-	public int score = 0;
+	public static int score = 0;
 	public Text lives;
 	public Text scoreText;
 	public Image lifeBar;
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour {
 			return;
 		}
 		lives.text = player.GetComponent<LifeAndAmmo>().lifePoints + " /  100";
-		lifeBar.fillAmount = player.GetComponent<LifeAndAmmo>().lifePoints / 100;
+		lifeBar.fillAmount = (float)player.GetComponent<LifeAndAmmo>().lifePoints / 100f;
 		scoreText.text = "Score : " + score.ToString(); 
 	}
 

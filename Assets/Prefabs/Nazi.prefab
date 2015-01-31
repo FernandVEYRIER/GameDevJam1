@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.638000011, y: 0, z: 0}
+  m_LocalPosition: {x: -.638000011, y: -1.04499996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 498258}
@@ -70,7 +70,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d2982a5ca061b408c7aa786a1c46ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletVelocity: 0
+  bulletVelocity: 20
   bulletPrefab: {fileID: 199754, guid: f20b6883cb973dc4c940722129cabe1f, type: 2}
   bulletStart: {fileID: 498258}
   shootDelay: 2

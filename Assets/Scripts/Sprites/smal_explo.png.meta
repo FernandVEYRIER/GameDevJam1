@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: 5dc21dd7c81811d47b25a7e97644e2b7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: smal_explo_0
+    21300002: smal_explo_1
+    21300004: smal_explo_2
+    21300006: smal_explo_3
+    21300008: smal_explo_4
+    21300010: smal_explo_5
+    21300012: smal_explo_6
+    21300014: smal_explo_7
+    21300016: smal_explo_8
+    21300018: smal_explo_9
+    21300020: smal_explo_10
+    21300022: smal_explo_11
+    21300024: smal_explo_12
+    21300026: smal_explo_13
+    21300028: smal_explo_14
+    21300030: smal_explo_15
+    21300032: smal_explo_16
+    21300034: SmallExplosion
+    21300036: smal_explo_18
+    21300038: smal_explo_19
+    21300040: smal_explo_27
+    21300042: smal_explo_28
+    21300044: smal_explo_29
+    21300046: smal_explo_33
+    21300048: smal_explo_34
+    21300050: smal_explo_38
+    21300052: smal_explo_39
+    21300054: smal_explo_14
+    21300056: smal_explo_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: smal_explo_8
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 14
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_9
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 8
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_10
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 8
+        width: 76
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_13
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 5
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_14
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 2
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_18
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1
+        width: 79
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_19
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1
+        width: 77
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_27
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1
+        width: 79
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_28
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_29
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1
+        width: 71
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_33
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1
+        width: 65
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_34
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 2
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_38
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 2
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_39
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 2
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_14
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 16
+        width: 77
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_15
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 19
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 20
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smal_explo_17
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 23
+        width: 78
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
