@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class HeroController : MonoBehaviour {
-	//TODO: save score
-	//warning bullets
+	//TODO: 
 	//bazooka
 	//headseekers
 	//slowmotion
