@@ -14,7 +14,7 @@ GameObject:
   - 50: {fileID: 5046790}
   - 82: {fileID: 8225208}
   - 114: {fileID: 11401968}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rocket 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}

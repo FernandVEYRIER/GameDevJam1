@@ -63,7 +63,6 @@ public class LaunchHeadingMissiles : MonoBehaviour {
 
 	IEnumerator changeColors()
 	{
-		Debug.Log("here");
 		int blueChannel = 0;
 		int greenChannel = 0;
 		SpriteRenderer sp = this.GetComponent<SpriteRenderer>();

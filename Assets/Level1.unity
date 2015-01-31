@@ -224,7 +224,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 105415560}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: .939999998, y: .939999998}
@@ -532,6 +532,7 @@ MonoBehaviour:
   reloadSound:
   - {fileID: 8300000, guid: f114e6adb5a155040ac34f3fb90609f4, type: 3}
   - {fileID: 8300000, guid: 891d009713e695d408338f77c09e4ec4, type: 3}
+  clipReload: {fileID: 8300000, guid: e6367d845276468419ce40024512de06, type: 3}
   shootSound: {fileID: 8300000, guid: 7f420ffb853081e458bf2305723f30ae, type: 3}
 --- !u!114 &260316359
 MonoBehaviour:
@@ -699,7 +700,7 @@ RectTransform:
   m_Children:
   - {fileID: 2050050520}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1034,7 +1035,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 622084462}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: .939999998, y: .939999998}
@@ -1175,7 +1176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!1 &679850594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,8 +1569,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .939999998, y: .939999998}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 2.80918479, y: .939999998}
+  m_Center: {x: -.934592366, y: 0}
 --- !u!212 &904049748
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1821,7 +1822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!1 &1069378702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,6 +2265,10 @@ Prefab:
       propertyPath: reloadSound.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: 891d009713e695d408338f77c09e4ec4, type: 3}
+    - target: {fileID: 11428630, guid: 64c9c9a2091c73d4380779c58b02e27f, type: 2}
+      propertyPath: clipReload
+      value: 
+      objectReference: {fileID: 8300000, guid: e6367d845276468419ce40024512de06, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64c9c9a2091c73d4380779c58b02e27f, type: 2}
   m_RootGameObject: {fileID: 260316351}
