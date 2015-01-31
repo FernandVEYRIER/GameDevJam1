@@ -26,4 +26,9 @@ public class PauseMenu : MonoBehaviour {
 		Time.timeScale = 1;
 		PauseText.SetActive(false);
 	}
+
+	public void OnQuitButton()
+	{
+		Application.Quit();
+	}
 }
