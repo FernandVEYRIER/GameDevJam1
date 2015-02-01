@@ -52,7 +52,7 @@ public class SloMo : MonoBehaviour {
 			yield return new WaitForSeconds(0.01f);
 		}
 		Time.timeScale = 1;
-		Destroy(this.gameObject, 1f);
+		Destroy(this.gameObject, 3f);
 		isSloMo = false;
 	}
 }
