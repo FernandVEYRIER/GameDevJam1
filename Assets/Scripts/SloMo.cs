@@ -3,8 +3,9 @@ using System.Collections;
 
 public class SloMo : MonoBehaviour {
 
-	public AudioClip sloMoSound;
+	public AudioClip []sloMoSound;
 	public AudioClip[] countSound;
+	int count = 0;
 	//Percentage of the time scale
 	public float percentageSlow = 1f;
 	//How many enemies to kill to trigger event
@@ -18,14 +19,18 @@ public class SloMo : MonoBehaviour {
 	void Start () 
 	{
 		ennemiesInstancesReference = GameObject.FindGameObjectsWithTag("Enemy");
-		audio.PlayOneShot(sloMoSound, 50f);
+		audio.PlayOneShot(sloMoSound[0], 20f);
 		StartCoroutine(startSloMo());
 		isSloMo = true;
 	}
 
 	public void playSound()
 	{
-		audio.PlayOneShot(countSound[0]);
+		audio.PlayOneShot(countSound[count++]);
+		if (count >= 3)
+		{
+			//reset time
+		}
 	}
 
 	IEnumerator startSloMo()
@@ -35,5 +40,16 @@ public class SloMo : MonoBehaviour {
 			Time.timeScale -= 0.01f;
 			yield return new WaitForSeconds(0.01f);
 		}
+	}
+
+	IEnumerator stopSloMo()
+	{
+		audio.PlayOneShot(sloMoSound[1]);
+		while (Time.timeScale < 1)
+		{
+			Time.timeScale += 0.01f;
+			yield return new WaitForSeconds(0.01f);
+		}
+		Time.timeScale = 1;
 	}
 }

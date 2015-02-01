@@ -99,7 +99,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 26fb2500d644329488dbe947fe38b988, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .600000024
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -190,6 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   death_sound: {fileID: 8300000, guid: bc35da3dfb4aa6b47acba7aeb341e994, type: 3}
   death_event: {fileID: 185230, guid: eaf39abb4087b15489b0598620492a27, type: 2}
+  damage: 30
 --- !u!212 &21241836
 SpriteRenderer:
   m_ObjectHideFlags: 1

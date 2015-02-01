@@ -2749,11 +2749,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d59288d1fc65648ab2f1f095634721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sloMoSound: {fileID: 8300000, guid: 269405694c12c06499ecef949249b95a, type: 3}
+  sloMoSound:
+  - {fileID: 8300000, guid: 269405694c12c06499ecef949249b95a, type: 3}
+  - {fileID: 0}
   countSound:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: cd6fc053b84433840969493ee72f2542, type: 3}
+  - {fileID: 8300000, guid: affb2eca829679041a2b271b102e5bb2, type: 3}
+  - {fileID: 8300000, guid: 5f3903af6443a28458a1576eb6318003, type: 3}
   percentageSlow: .5
   enemyCountTrigger: 3
   minElapsedTime: 1
@@ -2771,7 +2773,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 125
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -4058,7 +4060,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 071f3a979a9b66e479616d9f2f9945cb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .300000012
   m_Pitch: 1
   Loop: 1
   Mute: 0
