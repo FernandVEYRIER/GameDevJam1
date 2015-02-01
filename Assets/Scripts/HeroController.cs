@@ -5,9 +5,7 @@ public class HeroController : MonoBehaviour {
 	//TODO: 
 	//bazooka
 	//headseekers
-	//slowmotion
 	//event QTE
-	//reload with r
 
 	public LayerMask WhatIsGround;
 	public Transform groundCheck;

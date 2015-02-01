@@ -5,7 +5,7 @@ public class SloMo : MonoBehaviour {
 
 	public AudioClip []sloMoSound;
 	public AudioClip[] countSound;
-	int count = 0;
+	int count = -1;
 	//Percentage of the time scale
 	public float percentageSlow = 1f;
 	//How many enemies to kill to trigger event
@@ -26,8 +26,9 @@ public class SloMo : MonoBehaviour {
 
 	public void playSound()
 	{
-		audio.PlayOneShot(countSound[count++]);
-		if (count >= 3)
+		if (++count < countSound.Length)
+			audio.PlayOneShot(countSound[count]);
+		if (count >= countSound.Length)
 		{
 			StopAllCoroutines();
 			StartCoroutine(stopSloMo());
