@@ -28,7 +28,7 @@ public class SloMo : MonoBehaviour {
 	{
 		if (++count < countSound.Length)
 			audio.PlayOneShot(countSound[count]);
-		if (count >= countSound.Length)
+		if (count >= countSound.Length - 1)
 		{
 			StopAllCoroutines();
 			StartCoroutine(stopSloMo());

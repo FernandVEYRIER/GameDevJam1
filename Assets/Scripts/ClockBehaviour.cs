@@ -6,7 +6,6 @@ public class ClockBehaviour : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		Debug.Log(col.collider2D.tag);
 		if (col.collider2D.tag == "Player")
 		{
 			this.GetComponent<SloMo>().enabled = true;

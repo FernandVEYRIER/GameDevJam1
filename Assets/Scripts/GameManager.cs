@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
 	void Start()
 	{
 		score = 0;
+		SloMo.isSloMo = false;
 	}
 	
 	void Update() 

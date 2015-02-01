@@ -17,7 +17,7 @@ public class DestroyBullet : MonoBehaviour {
 			if (col.collider2D.name == "Nazi(Clone)")
 				Destroy(Instantiate(bloodSplash, this.transform.position, Quaternion.identity), .5f);
 			if (SloMo.isSloMo == true)
-				GameObject.Find("Clock").GetComponent<SloMo>().playSound();
+				GameObject.Find("Clock(Clone)").GetComponent<SloMo>().playSound();
 			Destroy(col.gameObject);
 		}
 		Destroy(this.gameObject);
