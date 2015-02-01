@@ -11,6 +11,7 @@ public class NaziAI : MonoBehaviour {
 	public float moveSpeed = 100f;
 	public AudioClip deathSound;
 	public GameObject bloodSplash;
+	public GameObject helmetFall;
 
 	float lastShot = -1;
 	float boundDistanceLeft;
@@ -69,6 +70,7 @@ public class NaziAI : MonoBehaviour {
 			col.collider.GetComponent<LifeAndAmmo>().lifePoints -= 5;
 			audio.PlayOneShot(deathSound, 10f);
 			Destroy(Instantiate(bloodSplash, this.transform.position, Quaternion.identity), 2f);
+			Destroy(Instantiate(helmetFall, this.transform.position, Quaternion.identity), 2f);
 			Destroy(this.gameObject);
 		}
 	}

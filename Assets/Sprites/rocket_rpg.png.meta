@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 6d6d453ab90c8cd498aaf7f6c495b220
+guid: 521329be07330b843ad1f20caa8557f6
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Headcasque_0
-    21300002: Headcasque_1
-    21300004: Headcasque_2
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,13 +25,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -45,36 +42,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: Headcasque_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 6
-        width: 53
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Headcasque_1
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 8
-        width: 47
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Headcasque_2
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 8
-        width: 39
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 

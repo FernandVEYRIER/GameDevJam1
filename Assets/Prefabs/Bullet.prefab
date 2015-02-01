@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodSplash: {fileID: 160964, guid: 862955fd14787ce4d9cf792868f123f9, type: 2}
+  helmetFall: {fileID: 146242, guid: 6af8bc7dc496b8849ba20b27ec4bf88d, type: 2}
 --- !u!212 &21299754
 SpriteRenderer:
   m_ObjectHideFlags: 1
