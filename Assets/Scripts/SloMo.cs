@@ -53,6 +53,7 @@ public class SloMo : MonoBehaviour {
 		}
 		Time.timeScale = 1;
 		Destroy(this.gameObject, 3f);
+		GameManager.score += 1000;
 		isSloMo = false;
 	}
 }
