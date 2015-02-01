@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour {
 		scoreText.text = "Score : " + score.ToString();
 		if (livesCount <= 0 && !canvasMenu.activeSelf)
 		{
+			Time.timeScale = 1;
 			Destroy(player);
 			audio.PlayOneShot(deathSound);
 			GameObject.Find("CanvasPlayer").SetActive(false);
