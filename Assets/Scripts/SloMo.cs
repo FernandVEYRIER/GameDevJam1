@@ -45,14 +45,14 @@ public class SloMo : MonoBehaviour {
 
 	IEnumerator stopSloMo()
 	{
-		audio.PlayOneShot(sloMoSound[1]);
+		audio.PlayOneShot(sloMoSound[1], 2F);
 		while (Time.timeScale < 1)
 		{
 			Time.timeScale += 0.01f;
 			yield return new WaitForSeconds(0.01f);
 		}
 		Time.timeScale = 1;
-		Destroy(this.gameObject);
+		Destroy(this.gameObject, 1f);
 		isSloMo = false;
 	}
 }
