@@ -29,7 +29,8 @@ public class SloMo : MonoBehaviour {
 		audio.PlayOneShot(countSound[count++]);
 		if (count >= 3)
 		{
-			//reset time
+			StopAllCoroutines();
+			StartCoroutine(stopSloMo());
 		}
 	}
 
@@ -51,5 +52,7 @@ public class SloMo : MonoBehaviour {
 			yield return new WaitForSeconds(0.01f);
 		}
 		Time.timeScale = 1;
+		Destroy(this.gameObject);
+		isSloMo = false;
 	}
 }
