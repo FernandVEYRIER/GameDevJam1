@@ -53,7 +53,7 @@ public class DropCrates : MonoBehaviour {
 		{
 			drop = false;
 			yield return new WaitForSeconds(Random.Range(minWait, maxWait));
-			Instantiate(crates[0], this.transform.position, Quaternion.identity);
+			Instantiate(crates[Random.Range(0, crates.Length)], this.transform.position, Quaternion.identity);
 			drop = true;
 		}
 	}
