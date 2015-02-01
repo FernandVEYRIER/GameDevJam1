@@ -2007,7 +2007,7 @@ GameObject:
   - 4: {fileID: 827860096}
   - 114: {fileID: 827860095}
   m_Layer: 0
-  m_Name: FriendyDrop
+  m_Name: FriendlyDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2026,6 +2026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crates:
   - {fileID: 170874, guid: e9534f69d5d4d2f438024b248d3cde57, type: 2}
+  - {fileID: 171716, guid: c990d5d4eade0c54fa0e4d8543be36b9, type: 2}
   minWait: 15
   maxWait: 20
 --- !u!4 &827860096
@@ -2751,7 +2752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sloMoSound:
   - {fileID: 8300000, guid: 269405694c12c06499ecef949249b95a, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 3c3edccb2fd95c94b93697b39030e3ae, type: 3}
   countSound:
   - {fileID: 8300000, guid: cd6fc053b84433840969493ee72f2542, type: 3}
   - {fileID: 8300000, guid: affb2eca829679041a2b271b102e5bb2, type: 3}
