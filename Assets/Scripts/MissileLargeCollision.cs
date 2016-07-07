@@ -9,7 +9,7 @@ public class MissileLargeCollision : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D colli)
 	{
-		Collider2D[] cols = Physics2D.OverlapCircleAll(this.transform.position, 2);
+		Collider2D[] cols = Physics2D.OverlapCircleAll(this.transform.position, 1.5f);
 		foreach (Collider2D col in cols)
 		{
 			if (col.collider2D.tag == "Player")

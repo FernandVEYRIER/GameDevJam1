@@ -3,7 +3,6 @@ using System.Collections;
 
 public class HeroController : MonoBehaviour {
 	//TODO: 
-	//bazooka
 	//headseekers
 	//event QTE
 

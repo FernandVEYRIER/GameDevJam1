@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Shoot : MonoBehaviour {
-
+	
 	public GameObject bullet;
 	public Transform startPos;
 	public float bulletVelocity = 100F;
@@ -17,6 +17,8 @@ public class Shoot : MonoBehaviour {
 	public AudioClip [] reloadSound;
 	public AudioClip clipReload;
 
+	[HideInInspector]
+	public bool isFlameThrower = false;
 	public AudioClip shootSound;
 	Transform playerScale;
 
@@ -30,22 +32,26 @@ public class Shoot : MonoBehaviour {
 	void Update () 
 	{
 		lastShot -= Time.deltaTime;
-		if (lastShot < 0 && currentAmmo > 0 && Input.GetButton("Fire1"))
+		if (!isFlameThrower)
 		{
-			currentAmmo -= Time.deltaTime;
-			lastShot = bulletDelay;
-			GameObject go = (GameObject) Instantiate(bullet, startPos.position, Quaternion.identity);
-			go.rigidbody2D.velocity = new Vector2(bulletVelocity * -playerScale.localScale.x, 0);
-			audio.PlayOneShot(shootSound, 0.3f);
-			Destroy(go, 2f);
-		}
-		if (currentAmmo <= 0 && lastShot < 0 || (Input.GetKeyDown(KeyCode.R) && currentAmmo != ammoMagazine && lastShot < 0))
-		{
-			//disable shot while reloading, and play sounds
-			int audioToPlay = Random.Range(0, reloadSound.Length);
-			audio.PlayOneShot( reloadSound[audioToPlay], (audioToPlay == 0) ? 0.3f : 2.5f );
-			lastShot = 999;
-			Invoke("reloadWeapon", reloadDelay);
+			if (lastShot < 0 && currentAmmo > 0 && Input.GetButton("Fire1"))
+			{
+				currentAmmo -= Time.deltaTime;
+				lastShot = bulletDelay;
+				GameObject go = (GameObject) Instantiate(bullet, startPos.position, Quaternion.identity);
+				go.rigidbody2D.velocity = new Vector2(bulletVelocity * -playerScale.localScale.x, 0);
+				go.transform.localScale = new Vector3(-playerScale.transform.localScale.x * go.transform.localScale.x, go.transform.localScale.y, 1);
+				audio.PlayOneShot(shootSound, 0.3f);
+				Destroy(go, 2f);
+			}
+			if (currentAmmo <= 0 && lastShot < 0 || (Input.GetKeyDown(KeyCode.R) && currentAmmo != ammoMagazine && lastShot < 0))
+			{
+				//disable shot while reloading, and play sounds
+				int audioToPlay = Random.Range(0, reloadSound.Length);
+				audio.PlayOneShot( reloadSound[audioToPlay], (audioToPlay == 0) ? 0.3f : 2.5f );
+				lastShot = 999;
+				Invoke("reloadWeapon", reloadDelay);
+			}
 		}
 	}
 
@@ -55,4 +61,5 @@ public class Shoot : MonoBehaviour {
 		lastShot = -1;
 		currentAmmo = ammoMagazine;
 	}
+	
 }

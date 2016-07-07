@@ -12,13 +12,13 @@ public class Spawn_copter : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (GameObject.Find("Copter(Clone)") == true)
+		if (GameObject.Find ("Copter(Clone)") == true) 
 		{
 			return;
 		}
-		else
+		else 
 		{
-			Instantiate(copter,  transform.position, transform.rotation);
+			Instantiate (copter, transform.position, transform.rotation);
 		}
 	}
 }

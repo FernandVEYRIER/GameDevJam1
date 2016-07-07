@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: 4dddd217d0cf08343af68c9e44ba2c1e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pyroman_0
+    21300002: pyroman_1
+    21300004: pyroman_2
+    21300006: pyroman_3
+    21300008: pyroman_4
+    21300010: pyroman_5
+    21300012: pyroman_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pyroman_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pyroman_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pyroman_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 0
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pyroman_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pyroman_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pyroman_5
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pyroman_6
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 0
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

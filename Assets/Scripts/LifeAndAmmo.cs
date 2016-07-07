@@ -6,7 +6,7 @@ public class LifeAndAmmo : MonoBehaviour {
 	public int lifePoints = 100;
 	public int ammo = 10;
 	public string [] WhatIsEnemy = {"Enemy"};
-	
+
 	void OnCollisionEnter2D (Collision2D col)
 	{
 		foreach(string layerName in WhatIsEnemy)
@@ -15,6 +15,14 @@ public class LifeAndAmmo : MonoBehaviour {
 			{
 				lifePoints--;
 			}
+		}
+		if (lifePoints < 20 && audio.isPlaying == false)
+		{
+			audio.Play();
+		}
+		else if (lifePoints >= 20 && audio.isPlaying == true)
+		{
+			audio.Stop ();
 		}
 	}
 }

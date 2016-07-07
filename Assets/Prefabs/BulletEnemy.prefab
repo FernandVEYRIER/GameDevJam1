@@ -12,7 +12,7 @@ GameObject:
   - 58: {fileID: 5884722}
   - 50: {fileID: 5084722}
   - 114: {fileID: 11484722}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: BulletEnemy
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodSplash: {fileID: 0}
+  helmetFall: {fileID: 0}
 --- !u!212 &21284722
 SpriteRenderer:
   m_ObjectHideFlags: 1

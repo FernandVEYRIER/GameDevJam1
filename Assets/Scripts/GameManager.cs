@@ -12,7 +12,12 @@ public class GameManager : MonoBehaviour {
 	public Image lifeBar;
 	public GameObject canvasMenu;
 	public AudioClip deathSound;
-	
+
+	void Awake()
+	{
+		Application.targetFrameRate = 80;
+	}
+
 	void Start()
 	{
 		score = 0;
@@ -36,6 +41,10 @@ public class GameManager : MonoBehaviour {
 			Destroy(player);
 			audio.PlayOneShot(deathSound);
 			GameObject.Find("CanvasPlayer").SetActive(false);
+			if (score > PlayerPrefs.GetInt("Score"))
+			{
+				PlayerPrefs.SetInt("Score", score);
+			}
 			canvasMenu.SetActive(true);
 		}
 	}
@@ -47,6 +56,7 @@ public class GameManager : MonoBehaviour {
 	
 	public void OnFightClick()
 	{
+		Time.timeScale = 1;
 		Application.LoadLevel(Application.loadedLevel);
 	}
 }

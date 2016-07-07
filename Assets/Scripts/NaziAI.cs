@@ -12,6 +12,9 @@ public class NaziAI : MonoBehaviour {
 	public AudioClip deathSound;
 	public GameObject bloodSplash;
 	public GameObject helmetFall;
+	[HideInInspector]
+	public bool isOnFire = false;
+	bool animOn = false;
 
 	float lastShot = -1;
 	float boundDistanceLeft;
@@ -35,6 +38,14 @@ public class NaziAI : MonoBehaviour {
 	{
 		if (player == null)
 		{
+			return;
+		}
+		if (isOnFire)
+		{
+			//run the other way
+			if (!animOn)
+				naziPanic();
+			this.rigidbody2D.velocity = new Vector2(-moveSpeed * this.transform.localScale.x * 2, this.rigidbody2D.velocity.y);
 			return;
 		}
 		//handle path
@@ -73,5 +84,11 @@ public class NaziAI : MonoBehaviour {
 			Destroy(Instantiate(helmetFall, this.transform.position, Quaternion.identity), 2f);
 			Destroy(this.gameObject);
 		}
+	}
+
+	void naziPanic()
+	{
+		this.transform.localScale = new Vector3(this.transform.localScale.x * -1, this.transform.localScale.y, this.transform.localScale.z);
+		animOn = true;
 	}
 }

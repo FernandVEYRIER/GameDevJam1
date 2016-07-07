@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bigExplosionPrefab: {fileID: 194180, guid: a6d826c5d18a76b408a2995878abea34, type: 2}
   explosionSound: {fileID: 8300000, guid: 659cc1e2d62658f4a953747ed0c0e4b6, type: 3}
-  damage: 20
+  damage: 10
 --- !u!212 &21258010
 SpriteRenderer:
   m_ObjectHideFlags: 1
