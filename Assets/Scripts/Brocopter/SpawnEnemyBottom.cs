@@ -21,9 +21,9 @@ public class SpawnEnemyBottom : MonoBehaviour {
 			lastSpawn = spawnDelay;
 			GameObject go = (GameObject) Instantiate(enemyToSpawn, this.transform.position, Quaternion.identity);
 			if (!isLeft)
-				go.rigidbody2D.AddForce(this.transform.up * 600);
+				go.GetComponent<Rigidbody2D>().AddForce(this.transform.up * 600);
 			else
-				go.rigidbody2D.velocity = new Vector2(-100, 10);
+				go.GetComponent<Rigidbody2D>().velocity = new Vector2(-100, 10);
 		}
 	}
 }

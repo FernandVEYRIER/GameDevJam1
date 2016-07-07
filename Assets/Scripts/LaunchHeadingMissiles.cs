@@ -54,7 +54,7 @@ public class LaunchHeadingMissiles : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(0.5f);
 		GameObject go = (GameObject) Instantiate(missilePrefab, this.transform.position, Quaternion.identity);
-		go.rigidbody2D.velocity = new Vector2(missileVel, 0);
+		go.GetComponent<Rigidbody2D>().velocity = new Vector2(missileVel, 0);
 		Destroy(go, 10f);
 		warming = false;
 		thisSprite.enabled = false;

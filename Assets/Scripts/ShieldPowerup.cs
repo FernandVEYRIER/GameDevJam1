@@ -35,16 +35,16 @@ public class ShieldPowerup : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.collider2D.tag == "Player")
+		if (col.GetComponent<Collider2D>().tag == "Player")
 		{
 			GameObject go = (GameObject) Instantiate(shieldPrefab, col.transform.position, Quaternion.identity);
 			go.transform.SetParent(col.transform);
 			go.transform.position = new Vector3(go.transform.position.x, go.transform.position.y, go.transform.position.z - 0.1f);
 			Destroy(this.gameObject);
 		}
-		if (col.collider2D.tag == "Ground")
+		if (col.GetComponent<Collider2D>().tag == "Ground")
 		{
-			this.rigidbody2D.isKinematic = true;
+			this.GetComponent<Rigidbody2D>().isKinematic = true;
 		}
 	}
 }

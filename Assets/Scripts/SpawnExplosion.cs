@@ -24,12 +24,12 @@ public class SpawnExplosion : MonoBehaviour {
 		Destroy(Instantiate(blastPrefab, this.transform.position, Quaternion.identity), 0.2f);
 		foreach (Collider2D col in allCol)
 		{
-			if (col.collider2D.tag == "Enemy")
+			if (col.GetComponent<Collider2D>().tag == "Enemy")
 			{
 				GameManager.score += 100;
-				Destroy(col.collider2D.gameObject);
+				Destroy(col.GetComponent<Collider2D>().gameObject);
 			}
-			if (col.collider2D.tag == "Player")
+			if (col.GetComponent<Collider2D>().tag == "Player")
 			{
 				GameObject.FindWithTag("Player").GetComponent<LifeAndAmmo>().lifePoints -= damage;
 			}

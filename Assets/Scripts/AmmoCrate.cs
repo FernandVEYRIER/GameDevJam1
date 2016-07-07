@@ -26,7 +26,7 @@ public class AmmoCrate : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.collider2D.tag == "Player")
+		if (col.GetComponent<Collider2D>().tag == "Player")
 		{
 			int rand = Random.Range(0, 2);
 			if (rand == 0)
@@ -38,10 +38,10 @@ public class AmmoCrate : MonoBehaviour {
 			GameObject.Find ("Vestiaire").GetComponent<Vestiaire>().prepareChange(rocketTime);
 			Destroy(this.gameObject);
 		}
-		if (col.collider2D.tag == "Ground")
+		if (col.GetComponent<Collider2D>().tag == "Ground")
 		{
-			this.rigidbody2D.isKinematic = true;
-			this.collider2D.isTrigger  = true;
+			this.GetComponent<Rigidbody2D>().isKinematic = true;
+			this.GetComponent<Collider2D>().isTrigger  = true;
 			Destroy(GameObject.Find("Parachute_0"));
 			Destroy(this.gameObject, persistence);
 		}
@@ -50,7 +50,7 @@ public class AmmoCrate : MonoBehaviour {
 
 	void setParamsRocket(GameObject player)
 	{
-		player.collider2D.GetComponent<Animator>().runtimeAnimatorController = anim[0];
+		player.GetComponent<Collider2D>().GetComponent<Animator>().runtimeAnimatorController = anim[0];
 		//player.collider2D.GetComponent<SpriteRenderer>().sprite = sprite[0];
 		player.GetComponent<Shoot>().bullet = pStats[0].bullet;
 		player.GetComponent<Shoot>().startPos = player.transform.FindChild("spawnRocket").transform;
@@ -64,7 +64,7 @@ public class AmmoCrate : MonoBehaviour {
 
 	void setParamsFlameThrower(GameObject player)
 	{
-		player.collider2D.GetComponent<Animator>().runtimeAnimatorController = anim[1];
+		player.GetComponent<Collider2D>().GetComponent<Animator>().runtimeAnimatorController = anim[1];
 		//player.collider2D.GetComponent<SpriteRenderer>().sprite = sprite[0];
 		player.GetComponent<Shoot>().bullet = pStats[0].bullet;
 		player.GetComponent<Shoot>().startPos = player.transform.FindChild("spawnRocket").transform;

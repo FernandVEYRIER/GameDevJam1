@@ -28,16 +28,16 @@ public class HeroController : MonoBehaviour {
 	void Update () 
 	{
 		//face the right direction
-		if (Mathf.RoundToInt(this.rigidbody2D.velocity.x) != 0)
+		if (Mathf.RoundToInt(this.GetComponent<Rigidbody2D>().velocity.x) != 0)
 		{
-			this.transform.localScale = new Vector3((Mathf.RoundToInt(this.rigidbody2D.velocity.x) > 0) ? -1 : 1, 1, 1);
+			this.transform.localScale = new Vector3((Mathf.RoundToInt(this.GetComponent<Rigidbody2D>().velocity.x) > 0) ? -1 : 1, 1, 1);
 		}
 
 		//can he jump ?
 		if (isGrounded && Input.GetAxis("Vertical") > 0)
 		{
 			isGrounded = false;
-			this.rigidbody2D.AddForce(new Vector2(0, JumpForce));
+			this.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpForce));
 		}
 
 		if (Physics2D.OverlapCircle(groundCheck.position, 0.1f, WhatIsGround))
@@ -47,7 +47,7 @@ public class HeroController : MonoBehaviour {
 		//sets anim and forces
 		if (canApplyForce)
 		{
-			this.rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * Velocity, this.rigidbody2D.velocity.y);
+			this.GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * Velocity, this.GetComponent<Rigidbody2D>().velocity.y);
 		}
 
 		//set anims

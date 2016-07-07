@@ -19,7 +19,7 @@ public class SloMo : MonoBehaviour {
 	void Start () 
 	{
 		ennemiesInstancesReference = GameObject.FindGameObjectsWithTag("Enemy");
-		audio.PlayOneShot(sloMoSound[0], 20f);
+		GetComponent<AudioSource>().PlayOneShot(sloMoSound[0], 20f);
 		StartCoroutine(startSloMo());
 		isSloMo = true;
 	}
@@ -27,7 +27,7 @@ public class SloMo : MonoBehaviour {
 	public void playSound()
 	{
 		if (++count < countSound.Length)
-			audio.PlayOneShot(countSound[count]);
+			GetComponent<AudioSource>().PlayOneShot(countSound[count]);
 		if (count >= countSound.Length - 1)
 		{
 			StopAllCoroutines();
@@ -46,7 +46,7 @@ public class SloMo : MonoBehaviour {
 
 	IEnumerator stopSloMo()
 	{
-		audio.PlayOneShot(sloMoSound[1], 2F);
+		GetComponent<AudioSource>().PlayOneShot(sloMoSound[1], 2F);
 		while (Time.timeScale < 1)
 		{
 			Time.timeScale += 0.01f;

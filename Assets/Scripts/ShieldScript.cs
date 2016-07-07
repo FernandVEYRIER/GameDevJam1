@@ -7,8 +7,8 @@ public class ShieldScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		Debug.Log(col.collider2D.tag);
-		if (col.collider2D.tag == "Enemy" || col.collider2D.tag == "EnemyBullet")
+		Debug.Log(col.GetComponent<Collider2D>().tag);
+		if (col.GetComponent<Collider2D>().tag == "Enemy" || col.GetComponent<Collider2D>().tag == "EnemyBullet")
 		{
 			StartCoroutine(shotAnim());
 			shotAbsorbed -= 1;

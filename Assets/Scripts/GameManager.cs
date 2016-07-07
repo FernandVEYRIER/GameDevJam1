@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour {
 		{
 			Time.timeScale = 1;
 			Destroy(player);
-			audio.PlayOneShot(deathSound);
+			GetComponent<AudioSource>().PlayOneShot(deathSound);
 			GameObject.Find("CanvasPlayer").SetActive(false);
 			if (score > PlayerPrefs.GetInt("Score"))
 			{

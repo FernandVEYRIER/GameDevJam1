@@ -8,15 +8,15 @@ public class HealthCrateBehaviour : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.collider2D.tag == "Player")
+		if (col.GetComponent<Collider2D>().tag == "Player")
 		{
-			col.collider2D.GetComponent<LifeAndAmmo>().lifePoints += lifeGiven;
+			col.GetComponent<Collider2D>().GetComponent<LifeAndAmmo>().lifePoints += lifeGiven;
 			Destroy(this.gameObject);
 		}
-		if (col.collider2D.tag == "Ground")
+		if (col.GetComponent<Collider2D>().tag == "Ground")
 		{
-			this.rigidbody2D.isKinematic = true;
-			this.collider2D.isTrigger  = true;
+			this.GetComponent<Rigidbody2D>().isKinematic = true;
+			this.GetComponent<Collider2D>().isTrigger  = true;
 			Destroy(GameObject.Find("Parachute_0"));
 			Destroy(this.gameObject, persistence);
 		}

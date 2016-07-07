@@ -28,9 +28,9 @@ public class SpawnFire : MonoBehaviour {
 				StopAllCoroutines();
 				isNotPlaying = true;
 			}
-			this.particleEmitter.localVelocity = new Vector3 (-playerTransform.localScale.x * 3, 0, 0);
+			this.GetComponent<ParticleEmitter>().localVelocity = new Vector3 (-playerTransform.localScale.x * 3, 0, 0);
 			childEmitter.localVelocity = new Vector3 (-playerTransform.localScale.x * 3, 0, 0);
-			this.particleEmitter.emit = Input.GetButton("Fire1");
+			this.GetComponent<ParticleEmitter>().emit = Input.GetButton("Fire1");
 			childEmitter.emit = Input.GetButton("Fire1");
 			this.GetComponent<Collider2D>().enabled = Input.GetButton("Fire1");
 		}
@@ -39,7 +39,7 @@ public class SpawnFire : MonoBehaviour {
 			StopAllCoroutines();
 			isNotPlaying = true;
 			childEmitter.emit = false;
-			this.particleEmitter.emit = false;
+			this.GetComponent<ParticleEmitter>().emit = false;
 			this.GetComponent<Collider2D>().enabled = false;
 		}
 	}
@@ -48,7 +48,7 @@ public class SpawnFire : MonoBehaviour {
 	{
 		while (true)
 		{
-			audio.Play();
+			GetComponent<AudioSource>().Play();
 			yield return new WaitForSeconds(flameSound.length);
 		}
 	}

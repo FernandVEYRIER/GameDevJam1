@@ -46,9 +46,9 @@ public class shoot_minigun : MonoBehaviour {
 	{
 		activate = true;
 		GameObject tmpobj = (GameObject)Instantiate (munition , origin_spawn.transform.position, origin_spawn.transform.rotation);
-		tmpobj.rigidbody2D.velocity = new Vector2(-3,-2);
+		tmpobj.GetComponent<Rigidbody2D>().velocity = new Vector2(-3,-2);
 		GameObject tmpobj1 = (GameObject)Instantiate (munition , origin_spawn1.transform.position, origin_spawn1.transform.rotation);
-		tmpobj1.rigidbody2D.velocity = new Vector2(-3, -2);
+		tmpobj1.GetComponent<Rigidbody2D>().velocity = new Vector2(-3, -2);
 		yield return new WaitForSeconds (speed_bullet);
         activate = false;
     }

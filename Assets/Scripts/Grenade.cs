@@ -24,9 +24,9 @@ public class Grenade : MonoBehaviour {
 			lastThrow = grenadeDelay;
 			GameObject go = (GameObject) Instantiate(grenadePrefab, grenadeStart.position, Quaternion.identity);
 			if (playerScale.localScale.x > 0)
-				go.rigidbody2D.AddForce(grenadeStart.transform.right * -grenadeVelocity);
+				go.GetComponent<Rigidbody2D>().AddForce(grenadeStart.transform.right * -grenadeVelocity);
 			else
-				go.rigidbody2D.AddForce(grenadeStart.transform.up * grenadeVelocity);
+				go.GetComponent<Rigidbody2D>().AddForce(grenadeStart.transform.up * grenadeVelocity);
 			Destroy(go, grenadeExplosionDelay);
 		}
 	}

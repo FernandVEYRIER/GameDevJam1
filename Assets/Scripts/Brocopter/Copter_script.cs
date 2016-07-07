@@ -60,11 +60,11 @@ public class Copter_script : MonoBehaviour {
 		activate = true;
 		GameObject tmpunit = (GameObject)Instantiate (unit, spawn_unit.transform.position, spawn_unit.transform.rotation);
 		if (right)
-			tmpunit.rigidbody2D.velocity = new Vector2 (speed, 0);
+			tmpunit.GetComponent<Rigidbody2D>().velocity = new Vector2 (speed, 0);
 		else 
 		{
 			tmpunit.transform.localScale = new Vector3(-1, 1, 1);
-			tmpunit.rigidbody2D.velocity = new Vector2(-speed, 0);
+			tmpunit.GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0);
 		}
 		yield return new WaitForSeconds (Random.Range(1f, speed_unit));
 		activate = false;
@@ -80,12 +80,12 @@ public class Copter_script : MonoBehaviour {
 	}
     void OnTriggerEnter2D(Collider2D col)
     {
-        if ((col.collider2D.name == "Bullet(Clone)" && anim == false))
+        if ((col.GetComponent<Collider2D>().name == "Bullet(Clone)" && anim == false))
         {
             StartCoroutine (changeColor ());
 			RemoveLife();
         }
-		if ((col.collider2D.name == "rocket_rpg(Clone)" && anim == false))
+		if ((col.GetComponent<Collider2D>().name == "rocket_rpg(Clone)" && anim == false))
 		{
 			Debug.Log("here");
 			StartCoroutine (changeColor ());
@@ -129,13 +129,13 @@ public class Copter_script : MonoBehaviour {
 		for (int i = 0; i < 80; i++)
 		{
 			GameObject go = (GameObject) Instantiate(explosionPrefab, (Vector2)transform.position +  Random.insideUnitCircle, Quaternion.identity);
-			audio.PlayOneShot(explosionSound, 0.1f);
+			GetComponent<AudioSource>().PlayOneShot(explosionSound, 0.1f);
 			Destroy(go, 2f);
 			go.transform.SetParent(this.transform);
 			yield return new WaitForSeconds(0.01f);
 		}
 		gameObject.transform.position = new Vector3 (0, 1000, 0);
-		audio.Stop ();
+		GetComponent<AudioSource>().Stop ();
 		Destroy(gameObject, Random.Range(5, 8));
 		Destroy(GameObject.Find("Explosion(Clone)"));
 	}

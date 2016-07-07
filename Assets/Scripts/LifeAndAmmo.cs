@@ -16,13 +16,13 @@ public class LifeAndAmmo : MonoBehaviour {
 				lifePoints--;
 			}
 		}
-		if (lifePoints < 20 && audio.isPlaying == false)
+		if (lifePoints < 20 && GetComponent<AudioSource>().isPlaying == false)
 		{
-			audio.Play();
+			GetComponent<AudioSource>().Play();
 		}
-		else if (lifePoints >= 20 && audio.isPlaying == true)
+		else if (lifePoints >= 20 && GetComponent<AudioSource>().isPlaying == true)
 		{
-			audio.Stop ();
+			GetComponent<AudioSource>().Stop ();
 		}
 	}
 }

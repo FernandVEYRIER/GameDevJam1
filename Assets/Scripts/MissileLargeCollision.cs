@@ -12,12 +12,12 @@ public class MissileLargeCollision : MonoBehaviour {
 		Collider2D[] cols = Physics2D.OverlapCircleAll(this.transform.position, 1.5f);
 		foreach (Collider2D col in cols)
 		{
-			if (col.collider2D.tag == "Player")
+			if (col.GetComponent<Collider2D>().tag == "Player")
 			{
-				col.collider2D.GetComponent<LifeAndAmmo>().lifePoints -= damage;
+				col.GetComponent<Collider2D>().GetComponent<LifeAndAmmo>().lifePoints -= damage;
 			}
 		}
-		audio.PlayOneShot(explosionSound);
+		GetComponent<AudioSource>().PlayOneShot(explosionSound);
 		Destroy(Instantiate(bigExplosionPrefab, this.transform.position + Vector3.right, Quaternion.identity), 2f);
 		Destroy(this.gameObject);
 	}

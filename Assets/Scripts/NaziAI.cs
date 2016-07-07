@@ -45,7 +45,7 @@ public class NaziAI : MonoBehaviour {
 			//run the other way
 			if (!animOn)
 				naziPanic();
-			this.rigidbody2D.velocity = new Vector2(-moveSpeed * this.transform.localScale.x * 2, this.rigidbody2D.velocity.y);
+			this.GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed * this.transform.localScale.x * 2, this.GetComponent<Rigidbody2D>().velocity.y);
 			return;
 		}
 		//handle path
@@ -60,7 +60,7 @@ public class NaziAI : MonoBehaviour {
 		{
 			this.transform.localScale = new Vector3(1, this.transform.localScale.y, this.transform.localScale.z);
 		}
-		this.rigidbody2D.velocity = new Vector2(-moveSpeed * this.transform.localScale.x, this.rigidbody2D.velocity.y);
+		this.GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed * this.transform.localScale.x, this.GetComponent<Rigidbody2D>().velocity.y);
 
 		//shoot handling
 		lastShot -= Time.deltaTime;
@@ -68,7 +68,7 @@ public class NaziAI : MonoBehaviour {
 		{
 			lastShot = shootDelay;
 			GameObject go = Instantiate(bulletPrefab, bulletStart.transform.position, Quaternion.identity) as GameObject;
-			go.rigidbody2D.velocity = new Vector2(-bulletVelocity * this.transform.localScale.x, 0);
+			go.GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletVelocity * this.transform.localScale.x, 0);
 			Destroy(go, 3f);
 		}
 	}
@@ -79,7 +79,7 @@ public class NaziAI : MonoBehaviour {
 		{
 			GameManager.score += scoreReward;
 			col.collider.GetComponent<LifeAndAmmo>().lifePoints -= 5;
-			audio.PlayOneShot(deathSound, 10f);
+			GetComponent<AudioSource>().PlayOneShot(deathSound, 10f);
 			Destroy(Instantiate(bloodSplash, this.transform.position, Quaternion.identity), 2f);
 			Destroy(Instantiate(helmetFall, this.transform.position, Quaternion.identity), 2f);
 			Destroy(this.gameObject);

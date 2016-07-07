@@ -39,16 +39,16 @@ public class Shoot : MonoBehaviour {
 				currentAmmo -= Time.deltaTime;
 				lastShot = bulletDelay;
 				GameObject go = (GameObject) Instantiate(bullet, startPos.position, Quaternion.identity);
-				go.rigidbody2D.velocity = new Vector2(bulletVelocity * -playerScale.localScale.x, 0);
+				go.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletVelocity * -playerScale.localScale.x, 0);
 				go.transform.localScale = new Vector3(-playerScale.transform.localScale.x * go.transform.localScale.x, go.transform.localScale.y, 1);
-				audio.PlayOneShot(shootSound, 0.3f);
+				GetComponent<AudioSource>().PlayOneShot(shootSound, 0.3f);
 				Destroy(go, 2f);
 			}
 			if (currentAmmo <= 0 && lastShot < 0 || (Input.GetKeyDown(KeyCode.R) && currentAmmo != ammoMagazine && lastShot < 0))
 			{
 				//disable shot while reloading, and play sounds
 				int audioToPlay = Random.Range(0, reloadSound.Length);
-				audio.PlayOneShot( reloadSound[audioToPlay], (audioToPlay == 0) ? 0.3f : 2.5f );
+				GetComponent<AudioSource>().PlayOneShot( reloadSound[audioToPlay], (audioToPlay == 0) ? 0.3f : 2.5f );
 				lastShot = 999;
 				Invoke("reloadWeapon", reloadDelay);
 			}
@@ -57,7 +57,7 @@ public class Shoot : MonoBehaviour {
 
 	void reloadWeapon()
 	{
-		audio.PlayOneShot(clipReload, 3f);
+		GetComponent<AudioSource>().PlayOneShot(clipReload, 3f);
 		lastShot = -1;
 		currentAmmo = ammoMagazine;
 	}

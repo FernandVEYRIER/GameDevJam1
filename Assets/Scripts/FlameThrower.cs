@@ -7,7 +7,7 @@ public class FlameThrower : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.collider2D.name == "Nazi(Clone)")
+		if (col.GetComponent<Collider2D>().name == "Nazi(Clone)")
 		{
 			GameObject go = (GameObject) Instantiate(particleFire, col.transform.position + new Vector3(0, 0, -1), Quaternion.identity);
 			go.transform.SetParent(col.transform);
