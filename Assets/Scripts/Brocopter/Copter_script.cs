@@ -87,7 +87,6 @@ public class Copter_script : MonoBehaviour {
         }
 		if ((col.GetComponent<Collider2D>().name == "rocket_rpg(Clone)" && anim == false))
 		{
-			Debug.Log("here");
 			StartCoroutine (changeColor ());
 			RemoveLife2();
 		}

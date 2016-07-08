@@ -16,8 +16,13 @@ public class PauseMenu : MonoBehaviour {
 	{
 		if (Input.GetButtonDown("Pause"))
 		{
-			PauseText.SetActive(true);
-			Time.timeScale = 0;
+            if (!PauseText.activeSelf)
+            {
+                PauseText.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+                OnUnpause();
 		}
 	}
 

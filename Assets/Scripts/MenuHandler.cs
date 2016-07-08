@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour {
 
 	public void OnPlayClick()
 	{
-		Application.LoadLevel(1);
+        SceneManager.LoadScene(1);
 	}
 
 	public void OnQuitClick()

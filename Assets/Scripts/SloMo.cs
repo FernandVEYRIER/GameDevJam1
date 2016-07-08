@@ -14,11 +14,11 @@ public class SloMo : MonoBehaviour {
 	public float minElapsedTime = 1f;
 	public static bool isSloMo = false;
 
-	GameObject[] ennemiesInstancesReference;
+	//GameObject[] ennemiesInstancesReference;
 
 	void Start () 
 	{
-		ennemiesInstancesReference = GameObject.FindGameObjectsWithTag("Enemy");
+		//ennemiesInstancesReference = GameObject.FindGameObjectsWithTag("Enemy");
 		GetComponent<AudioSource>().PlayOneShot(sloMoSound[0], 20f);
 		StartCoroutine(startSloMo());
 		isSloMo = true;

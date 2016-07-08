@@ -59,11 +59,14 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -74,12 +77,14 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -97,6 +102,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.594017, y: 31.260681}
+        - {x: -17.594017, y: 27.260681}
+        - {x: -17.594017, y: -30.739319}
+        - {x: 18.405983, y: -30.739319}
+        - {x: 18.405983, y: 26.260681}
+        - {x: 8.405983, y: 31.260681}
     - name: player-topdown_1
       rect:
         serializedVersion: 2
@@ -107,6 +119,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.645302, y: 31.260681}
+        - {x: -17.645302, y: 26.260681}
+        - {x: -17.645302, y: -30.739319}
+        - {x: 18.354698, y: -30.739319}
+        - {x: 18.354698, y: 26.260681}
+        - {x: 8.354698, y: 31.260681}
     - name: player-topdown_2
       rect:
         serializedVersion: 2
@@ -117,6 +136,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.696579, y: 31.260681}
+        - {x: -17.696579, y: 30.260681}
+        - {x: -17.696579, y: -30.739319}
+        - {x: 18.303421, y: -30.739319}
+        - {x: 18.303421, y: 31.260681}
     - name: player-topdown_3
       rect:
         serializedVersion: 2
@@ -127,6 +152,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.247864, y: 31.260681}
+        - {x: -17.247864, y: 23.260681}
+        - {x: -17.247864, y: -26.739319}
+        - {x: -12.247864, y: -30.739319}
+        - {x: 13.752136, y: -30.739319}
+        - {x: 17.752136, y: -27.739319}
+        - {x: 17.752136, y: 26.260681}
+        - {x: 13.752136, y: 31.260681}
     - name: player-topdown_4
       rect:
         serializedVersion: 2
@@ -137,6 +171,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.299164, y: 31.260681}
+        - {x: -17.299164, y: 22.260681}
+        - {x: -17.299164, y: -25.739319}
+        - {x: -13.299164, y: -30.739319}
+        - {x: 17.700836, y: -30.739319}
+        - {x: 17.700836, y: 29.260681}
+        - {x: 10.700836, y: 31.260681}
     - name: player-topdown_5
       rect:
         serializedVersion: 2
@@ -147,6 +189,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.470093, y: 31.260681}
+        - {x: -17.470093, y: 22.260681}
+        - {x: -17.470093, y: -26.739319}
+        - {x: -11.470093, y: -30.739319}
+        - {x: 18.529907, y: -30.739319}
+        - {x: 18.529907, y: 26.260681}
+        - {x: 11.529907, y: 31.260681}
     - name: player-topdown_6
       rect:
         serializedVersion: 2
@@ -157,6 +207,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5213623, y: 31.260681}
+        - {x: -5.5213623, y: 30.260681}
+        - {x: -14.521362, y: 23.260681}
+        - {x: -17.521362, y: 16.260681}
+        - {x: -17.521362, y: -23.739319}
+        - {x: -11.521362, y: -30.739319}
+        - {x: 14.478638, y: -30.739319}
+        - {x: 18.478638, y: -26.739319}
+        - {x: 18.478638, y: 24.260681}
+        - {x: 7.4786377, y: 31.260681}
     - name: player-topdown_7
       rect:
         serializedVersion: 2
@@ -167,6 +228,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.333313, y: 28.717941}
+        - {x: -17.333313, y: 20.717941}
+        - {x: -17.333313, y: -22.282059}
+        - {x: -11.333313, y: -28.282059}
+        - {x: 13.666687, y: -28.282059}
+        - {x: 18.666687, y: -16.282059}
+        - {x: 18.666687, y: 20.717941}
+        - {x: 7.666687, y: 28.717941}
     - name: player-topdown_8
       rect:
         serializedVersion: 2
@@ -177,6 +247,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.3846436, y: 28.717941}
+        - {x: -17.384644, y: 20.717941}
+        - {x: -17.384644, y: -22.282059}
+        - {x: -13.384644, y: -28.282059}
+        - {x: 17.615356, y: -28.282059}
+        - {x: 18.615356, y: -17.282059}
+        - {x: 18.615356, y: 21.717941}
+        - {x: 7.6153564, y: 28.717941}
     - name: player-topdown_9
       rect:
         serializedVersion: 2
@@ -187,6 +266,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.555542, y: 28.717941}
+        - {x: -16.555542, y: 19.717941}
+        - {x: -16.555542, y: -21.282059}
+        - {x: -15.555542, y: -26.282059}
+        - {x: -11.555542, y: -28.282059}
+        - {x: 16.444458, y: -28.282059}
+        - {x: 19.444458, y: -19.282059}
+        - {x: 19.444458, y: 20.717941}
+        - {x: 9.444458, y: 28.717941}
     - name: player-topdown_10
       rect:
         serializedVersion: 2
@@ -197,6 +286,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.606873, y: 28.8376}
+        - {x: -16.606873, y: 25.8376}
+        - {x: -16.606873, y: -23.1624}
+        - {x: -15.606873, y: -27.1624}
+        - {x: 16.393127, y: -27.1624}
+        - {x: 19.393127, y: -15.162399}
+        - {x: 19.393127, y: 27.8376}
+        - {x: 15.393127, y: 28.8376}
     - name: player-topdown_11
       rect:
         serializedVersion: 2
@@ -207,6 +305,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.594017, y: 30.88034}
+        - {x: -17.594017, y: 27.88034}
+        - {x: -17.594017, y: -28.11966}
+        - {x: -15.594017, y: -30.11966}
+        - {x: 14.405983, y: -30.11966}
+        - {x: 18.405983, y: -26.11966}
+        - {x: 18.405983, y: 23.88034}
+        - {x: 15.405983, y: 30.88034}
     - name: player-topdown_12
       rect:
         serializedVersion: 2
@@ -217,6 +324,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.645302, y: 30.88034}
+        - {x: -17.645302, y: 24.88034}
+        - {x: -17.645302, y: -29.11966}
+        - {x: -15.645302, y: -30.11966}
+        - {x: 14.354698, y: -30.11966}
+        - {x: 18.354698, y: -26.11966}
+        - {x: 18.354698, y: 23.88034}
+        - {x: 7.354698, y: 30.88034}
     - name: player-topdown_13
       rect:
         serializedVersion: 2
@@ -227,6 +343,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.696579, y: 30.88034}
+        - {x: -17.696579, y: 29.88034}
+        - {x: -17.696579, y: -30.11966}
+        - {x: 18.303421, y: -30.11966}
+        - {x: 18.303421, y: 30.88034}
     - name: player-topdown_14
       rect:
         serializedVersion: 2
@@ -237,6 +359,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.247864, y: 30.88034}
+        - {x: -17.247864, y: 25.88034}
+        - {x: -17.247864, y: -29.11966}
+        - {x: -15.247864, y: -30.11966}
+        - {x: 16.752136, y: -30.11966}
+        - {x: 17.752136, y: -29.11966}
+        - {x: 17.752136, y: 23.88034}
+        - {x: 9.752136, y: 30.88034}
     - name: player-topdown_15
       rect:
         serializedVersion: 2
@@ -247,6 +378,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.299164, y: 30.88034}
+        - {x: -17.299164, y: 27.88034}
+        - {x: -17.299164, y: -29.11966}
+        - {x: -15.299164, y: -30.11966}
+        - {x: 16.700836, y: -30.11966}
+        - {x: 17.700836, y: -29.11966}
+        - {x: 17.700836, y: 25.88034}
+        - {x: 14.700836, y: 30.88034}
     - name: player-topdown_16
       rect:
         serializedVersion: 2
@@ -257,6 +397,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.529907, y: 30.88034}
+        - {x: -4.470093, y: 30.88034}
+        - {x: -17.470093, y: 21.88034}
+        - {x: -17.470093, y: -23.11966}
+        - {x: -12.470093, y: -29.11966}
+        - {x: -11.470093, y: -30.11966}
+        - {x: 14.529907, y: -30.11966}
+        - {x: 16.529907, y: -29.11966}
+        - {x: 18.529907, y: -26.11966}
+        - {x: 18.529907, y: 23.88034}
     - name: player-topdown_17
       rect:
         serializedVersion: 2
@@ -267,6 +418,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.478638, y: 30.88034}
+        - {x: -7.5213623, y: 30.88034}
+        - {x: -11.521362, y: 29.88034}
+        - {x: -17.521362, y: 23.88034}
+        - {x: -17.521362, y: -25.11966}
+        - {x: -11.521362, y: -29.11966}
+        - {x: -8.521362, y: -30.11966}
+        - {x: 12.478638, y: -30.11966}
+        - {x: 16.478638, y: -29.11966}
+        - {x: 18.478638, y: -27.11966}
+        - {x: 18.478638, y: 22.88034}
     - name: player-topdown_18
       rect:
         serializedVersion: 2
@@ -277,6 +440,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.572632, y: 27.196579}
+        - {x: -17.572632, y: 19.196579}
+        - {x: -17.572632, y: -6.803421}
+        - {x: -9.572632, y: -26.803421}
+        - {x: 12.427368, y: -26.803421}
+        - {x: 18.427368, y: -18.803421}
+        - {x: 18.427368, y: 20.196579}
+        - {x: 8.427368, y: 27.196579}
     - name: player-topdown_19
       rect:
         serializedVersion: 2
@@ -287,6 +459,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.623962, y: 27.196579}
+        - {x: -17.623962, y: 24.196579}
+        - {x: -17.623962, y: -9.803421}
+        - {x: -8.623962, y: -26.803421}
+        - {x: 17.376038, y: -26.803421}
+        - {x: 18.376038, y: -25.803421}
+        - {x: 18.376038, y: 22.196579}
+        - {x: 15.376038, y: 27.196579}
     - name: player-topdown_20
       rect:
         serializedVersion: 2
@@ -297,6 +478,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.055542, y: 27.196579}
+        - {x: -16.055542, y: 21.196579}
+        - {x: -16.055542, y: -17.803421}
+        - {x: -15.055542, y: -26.803421}
+        - {x: 16.944458, y: -26.803421}
+        - {x: 18.944458, y: -23.803421}
+        - {x: 18.944458, y: 21.196579}
+        - {x: 11.944458, y: 27.196579}
     - name: player-topdown_21
       rect:
         serializedVersion: 2
@@ -307,6 +497,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.6068726, y: 27.816238}
+        - {x: -10.606873, y: 26.816238}
+        - {x: -15.606873, y: 16.816238}
+        - {x: -15.606873, y: -1.1837616}
+        - {x: -13.606873, y: -11.183762}
+        - {x: -6.6068726, y: -26.183762}
+        - {x: 12.393127, y: -26.183762}
+        - {x: 18.393127, y: -20.183762}
+        - {x: 18.393127, y: 22.816238}
+        - {x: 14.393127, y: 27.816238}
     - name: player-topdown_22
       rect:
         serializedVersion: 2
@@ -317,6 +518,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.051283, y: 30.260681}
+        - {x: -22.051283, y: 5.260681}
+        - {x: -22.051283, y: -19.739319}
+        - {x: -19.051283, y: -25.739319}
+        - {x: -15.051283, y: -29.739319}
+        - {x: 14.948717, y: -29.739319}
+        - {x: 22.948717, y: -26.739319}
+        - {x: 22.948717, y: 25.260681}
+        - {x: 16.948717, y: 30.260681}
     - name: player-topdown_23
       rect:
         serializedVersion: 2
@@ -327,6 +538,20 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.63675, y: -4.739319}
+        - {x: 22.63675, y: 0.26068115}
+        - {x: 22.63675, y: 21.260681}
+        - {x: 17.63675, y: 30.260681}
+        - {x: -6.3632507, y: 30.260681}
+        - {x: -14.363251, y: 28.260681}
+        - {x: -21.36325, y: 2.2606812}
+        - {x: -21.36325, y: -28.739319}
+        - {x: -16.36325, y: -29.739319}
+        - {x: 16.63675, y: -29.739319}
+        - {x: 20.63675, y: -21.739319}
+        - {x: 19.63675, y: -14.739319}
+        - {x: 17.63675, y: -9.739319}
     - name: player-topdown_24
       rect:
         serializedVersion: 2
@@ -337,6 +562,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.465805, y: 30.260681}
+        - {x: -10.534195, y: 30.260681}
+        - {x: -12.534195, y: 28.260681}
+        - {x: -21.534195, y: 2.2606812}
+        - {x: -21.534195, y: -25.739319}
+        - {x: -17.534195, y: -29.739319}
+        - {x: 16.465805, y: -29.739319}
+        - {x: 23.465805, y: -25.739319}
+        - {x: 23.465805, y: 17.260681}
+        - {x: 19.465805, y: 27.260681}
     - name: player-topdown_25
       rect:
         serializedVersion: 2
@@ -347,6 +583,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.08548, y: 30.260681}
+        - {x: -17.08548, y: 19.260681}
+        - {x: -21.08548, y: 5.260681}
+        - {x: -21.08548, y: -23.739319}
+        - {x: -13.08548, y: -29.739319}
+        - {x: 15.91452, y: -29.739319}
+        - {x: 22.91452, y: -27.739319}
+        - {x: 22.91452, y: 27.260681}
+        - {x: 15.91452, y: 30.260681}
     - name: player-topdown_26
       rect:
         serializedVersion: 2
@@ -357,6 +603,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.86325, y: 30.260681}
+        - {x: -12.136749, y: 30.260681}
+        - {x: -21.13675, y: -2.7393188}
+        - {x: -21.13675, y: -18.739319}
+        - {x: -19.13675, y: -26.739319}
+        - {x: -11.136749, y: -29.739319}
+        - {x: 14.863251, y: -29.739319}
+        - {x: 21.86325, y: -21.739319}
+        - {x: 22.86325, y: -19.739319}
+        - {x: 22.86325, y: 23.260681}
     - name: player-topdown_27
       rect:
         serializedVersion: 2
@@ -367,6 +624,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.188049, y: 30.260681}
+        - {x: -17.18805, y: 28.260681}
+        - {x: -21.18805, y: 10.260681}
+        - {x: -21.18805, y: -23.739319}
+        - {x: -14.188049, y: -29.739319}
+        - {x: 15.811951, y: -29.739319}
+        - {x: 22.81195, y: -26.739319}
+        - {x: 22.81195, y: 24.260681}
+        - {x: 18.81195, y: 30.260681}
     - name: player-topdown_28
       rect:
         serializedVersion: 2
@@ -377,6 +644,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.239319, y: -7.739319}
+        - {x: -21.239319, y: -18.739319}
+        - {x: -11.239319, y: -29.739319}
+        - {x: 22.760681, y: -29.739319}
+        - {x: 22.760681, y: 30.260681}
+        - {x: -6.239319, y: 30.260681}
+        - {x: -15.239319, y: 22.260681}
     - name: player-topdown_29
       rect:
         serializedVersion: 2
@@ -387,6 +662,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.2905884, y: 30}
+        - {x: -17.290588, y: 23}
+        - {x: -21.290588, y: -1}
+        - {x: -21.290588, y: -19}
+        - {x: -8.290588, y: -29}
+        - {x: 10.709412, y: -29}
+        - {x: 14.709412, y: -27}
+        - {x: 22.709412, y: -14}
+        - {x: 22.709412, y: 26}
+        - {x: 21.709412, y: 30}
     - name: player-topdown_30
       rect:
         serializedVersion: 2
@@ -397,6 +683,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.961548, y: 30}
+        - {x: -21.961548, y: -29}
+        - {x: 21.038452, y: -29}
+        - {x: 22.038452, y: -16}
+        - {x: 22.038452, y: 30}
     - name: player-topdown_31
       rect:
         serializedVersion: 2
@@ -407,6 +699,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.512817, y: 30}
+        - {x: -20.512817, y: 7}
+        - {x: -20.512817, y: -22}
+        - {x: -6.5128174, y: -29}
+        - {x: 20.487183, y: -29}
+        - {x: 23.487183, y: -13}
+        - {x: 23.487183, y: 30}
     - name: player-topdown_32
       rect:
         serializedVersion: 2
@@ -417,6 +717,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.064087, y: 30}
+        - {x: -10.064087, y: 24}
+        - {x: -13.064087, y: 10}
+        - {x: -20.064087, y: -12}
+        - {x: -20.064087, y: -18}
+        - {x: -13.064087, y: -29}
+        - {x: 22.935913, y: -29}
+        - {x: 22.935913, y: 27}
+        - {x: 18.935913, y: 30}
     - name: player-topdown_33
       rect:
         serializedVersion: 2
@@ -427,6 +737,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.688034, y: 29.5}
+        - {x: -12.311966, y: 29.5}
+        - {x: -21.311966, y: 19.5}
+        - {x: -21.311966, y: -23.5}
+        - {x: -20.311966, y: -29.5}
+        - {x: 16.688034, y: -29.5}
+        - {x: 20.688034, y: -26.5}
+        - {x: 22.688034, y: -19.5}
+        - {x: 22.688034, y: 0.5}
     - name: player-topdown_34
       rect:
         serializedVersion: 2
@@ -437,6 +757,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.363251, y: 29}
+        - {x: -17.36325, y: 23}
+        - {x: -21.36325, y: 17}
+        - {x: -21.36325, y: -12}
+        - {x: -20.36325, y: -23}
+        - {x: -13.363251, y: -29}
+        - {x: 15.636749, y: -29}
+        - {x: 22.63675, y: -23}
+        - {x: 22.63675, y: -3}
+        - {x: 13.636749, y: 29}
     - name: player-topdown_35
       rect:
         serializedVersion: 2
@@ -447,6 +778,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.465805, y: 29.5}
+        - {x: -12.534195, y: 29.5}
+        - {x: -21.534195, y: 17.5}
+        - {x: -21.534195, y: -29.5}
+        - {x: 20.465805, y: -29.5}
+        - {x: 23.465805, y: -23.5}
+        - {x: 23.465805, y: 5.5}
+        - {x: 14.465805, y: 28.5}
     - name: player-topdown_36
       rect:
         serializedVersion: 2
@@ -457,6 +797,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.41452, y: 29.5}
+        - {x: -14.58548, y: 29.5}
+        - {x: -21.58548, y: 26.5}
+        - {x: -21.58548, y: -17.5}
+        - {x: -17.58548, y: -29.5}
+        - {x: 21.41452, y: -29.5}
+        - {x: 23.41452, y: -23.5}
+        - {x: 23.41452, y: 2.5}
+        - {x: 13.41452, y: 28.5}
     - name: player-topdown_37
       rect:
         serializedVersion: 2
@@ -467,6 +817,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.636749, y: 29}
+        - {x: -21.63675, y: 24}
+        - {x: -21.63675, y: -23}
+        - {x: -19.63675, y: -29}
+        - {x: 19.36325, y: -29}
+        - {x: 23.36325, y: -25}
+        - {x: 23.36325, y: 0}
+        - {x: 14.363251, y: 29}
     - name: player-topdown_38
       rect:
         serializedVersion: 2
@@ -477,6 +836,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.688049, y: 29.5}
+        - {x: -21.68805, y: 16.5}
+        - {x: -21.68805, y: -11.5}
+        - {x: -19.68805, y: -23.5}
+        - {x: -12.688049, y: -29.5}
+        - {x: 18.31195, y: -29.5}
+        - {x: 23.31195, y: -27.5}
+        - {x: 23.31195, y: 10.5}
+        - {x: 14.311951, y: 29.5}
     - name: player-topdown_39
       rect:
         serializedVersion: 2
@@ -487,6 +856,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.61969, y: 29.5}
+        - {x: -20.61969, y: 20.5}
+        - {x: -21.61969, y: 17.5}
+        - {x: -21.61969, y: 4.5}
+        - {x: -18.61969, y: -22.5}
+        - {x: -14.61969, y: -29.5}
+        - {x: 22.38031, y: -29.5}
+        - {x: 22.38031, y: 11.5}
+        - {x: 19.38031, y: 29.5}
     - name: player-topdown_40
       rect:
         serializedVersion: 2
@@ -497,6 +876,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.670959, y: 30.119658}
+        - {x: -21.67096, y: 23.119658}
+        - {x: -21.67096, y: -6.8803425}
+        - {x: -13.670959, y: -28.880342}
+        - {x: 17.32904, y: -28.880342}
+        - {x: 22.32904, y: -18.880342}
+        - {x: 22.32904, y: 7.1196575}
+        - {x: 16.32904, y: 30.119658}
     - name: player-topdown_41
       rect:
         serializedVersion: 2
@@ -507,6 +895,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.277771, y: 30.119658}
+        - {x: -8.722229, y: 30.119658}
+        - {x: -21.722229, y: 22.119658}
+        - {x: -21.722229, y: -1.8803425}
+        - {x: -13.722229, y: -28.880342}
+        - {x: 11.277771, y: -28.880342}
+        - {x: 22.277771, y: -20.880342}
+        - {x: 22.277771, y: 0.11965752}
+        - {x: 19.277771, y: 22.119658}
     - name: player-topdown_42
       rect:
         serializedVersion: 2
@@ -517,6 +915,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.273499, y: 30.119658}
+        - {x: -21.273499, y: 25.119658}
+        - {x: -21.273499, y: -6.8803425}
+        - {x: -9.273499, y: -28.880342}
+        - {x: 21.726501, y: -28.880342}
+        - {x: 21.726501, y: 28.119658}
+        - {x: 10.726501, y: 30.119658}
     - name: player-topdown_43
       rect:
         serializedVersion: 2
@@ -527,5 +933,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.324768, y: 30.119658}
+        - {x: -21.324768, y: 20.119658}
+        - {x: -21.324768, y: -16.880342}
+        - {x: -13.324768, y: -28.880342}
+        - {x: 17.675232, y: -28.880342}
+        - {x: 21.675232, y: -24.880342}
+        - {x: 21.675232, y: 21.119658}
+        - {x: 15.675232, y: 30.119658}
+    outline: []
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

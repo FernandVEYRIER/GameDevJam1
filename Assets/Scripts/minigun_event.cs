@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class minigun_event : MonoBehaviour {
 	
-	private float		alpha = 255;
+	//private float		alpha = 255;
 	private Color		col;
 
 	void Start ()
