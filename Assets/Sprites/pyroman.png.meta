@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 4dddd217d0cf08343af68c9e44ba2c1e
+timeCreated: 1467973477
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: pyroman_0
@@ -9,6 +11,10 @@ TextureImporter:
     21300008: pyroman_4
     21300010: pyroman_5
     21300012: pyroman_6
+    21300014: pyroman_7
+    21300016: pyroman_9
+    21300018: pyroman_11
+    21300020: pyroman_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,11 +28,14 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 1024
@@ -37,12 +46,14 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -50,75 +61,142 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: pyroman_0
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0
-        width: 93
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: pyroman_1
       rect:
         serializedVersion: 2
-        x: 149
-        y: 0
-        width: 93
-        height: 93
+        x: 19
+        y: 16
+        width: 91
+        height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: pyroman_2
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 0
-        width: 93
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 46}
+        - {x: -44.5, y: -13}
+        - {x: -45.5, y: -16}
+        - {x: -45.5, y: -32}
+        - {x: -39.5, y: -38}
+        - {x: -17.5, y: -46}
+        - {x: 33.5, y: -46}
+        - {x: 45.5, y: -35}
+        - {x: 45.5, y: 44}
+        - {x: 44.5, y: 46}
     - name: pyroman_3
       rect:
         serializedVersion: 2
-        x: 435
-        y: 0
-        width: 93
-        height: 94
+        x: 147
+        y: 17
+        width: 91
+        height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: pyroman_4
-      rect:
-        serializedVersion: 2
-        x: 596
-        y: 0
-        width: 93
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 45}
+        - {x: -8.5, y: 42}
+        - {x: -45.5, y: -5}
+        - {x: -45.5, y: -36}
+        - {x: -37.5, y: -45}
+        - {x: 29.5, y: -45}
+        - {x: 45.5, y: -25}
+        - {x: 45.5, y: 42}
+        - {x: 35.5, y: 45}
     - name: pyroman_5
       rect:
         serializedVersion: 2
-        x: 756
-        y: 0
-        width: 93
-        height: 94
+        x: 297
+        y: 16
+        width: 91
+        height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: pyroman_6
+      outline:
+      - - {x: -17.5, y: 46}
+        - {x: -45.5, y: 0}
+        - {x: -45.5, y: -42}
+        - {x: -36.5, y: -46}
+        - {x: 41.5, y: -46}
+        - {x: 45.5, y: -28}
+        - {x: 45.5, y: 45}
+        - {x: 43.5, y: 46}
+    - name: pyroman_7
       rect:
         serializedVersion: 2
-        x: 927
-        y: 0
-        width: 93
-        height: 94
+        x: 433
+        y: 16
+        width: 91
+        height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: -35}
+        - {x: -40.5, y: -41}
+        - {x: -29.5, y: -46}
+        - {x: 37.5, y: -46}
+        - {x: 45.5, y: -39}
+        - {x: 45.5, y: 41}
+        - {x: 43.5, y: 46}
+        - {x: -17.5, y: 46}
+        - {x: -45.5, y: -4}
+    - name: pyroman_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 16
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 45.5}
+        - {x: -45.5, y: 25.5}
+        - {x: -45.5, y: -43.5}
+        - {x: -40.5, y: -45.5}
+        - {x: 41.5, y: -45.5}
+        - {x: 45.5, y: -26.5}
+        - {x: 45.5, y: 45.5}
+    - name: pyroman_11
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 17
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 45.5}
+        - {x: -45.5, y: 21.5}
+        - {x: -45.5, y: -42.5}
+        - {x: -35.5, y: -45.5}
+        - {x: 33.5, y: -45.5}
+        - {x: 37.5, y: -42.5}
+        - {x: 45.5, y: -19.5}
+        - {x: 45.5, y: 45.5}
+    - name: pyroman_13
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 16
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 46}
+        - {x: -45.5, y: 27}
+        - {x: -45.5, y: -46}
+        - {x: 35.5, y: -46}
+        - {x: 45.5, y: -25}
+        - {x: 45.5, y: 46}
+    outline: []
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d958259d5cd2a76458123fd5a1c62ff9
-timeCreated: 1467935247
+timeCreated: 1467973397
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -36,7 +36,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 2
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -60,8 +60,8 @@ TextureImporter:
     - name: anim_walk_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 11
+        x: 28
+        y: 18
         width: 67
         height: 92
       alignment: 0
@@ -80,8 +80,8 @@ TextureImporter:
     - name: anim_walk_1
       rect:
         serializedVersion: 2
-        x: 170
-        y: 12
+        x: 178
+        y: 19
         width: 67
         height: 90
       alignment: 0
@@ -97,8 +97,8 @@ TextureImporter:
     - name: anim_walk_2
       rect:
         serializedVersion: 2
-        x: 320
-        y: 11
+        x: 328
+        y: 18
         width: 67
         height: 92
       alignment: 0
@@ -116,8 +116,8 @@ TextureImporter:
     - name: anim_walk_3
       rect:
         serializedVersion: 2
-        x: 470
-        y: 11
+        x: 478
+        y: 18
         width: 67
         height: 92
       alignment: 0
@@ -135,8 +135,8 @@ TextureImporter:
     - name: anim_walk_4
       rect:
         serializedVersion: 2
-        x: 620
-        y: 11
+        x: 628
+        y: 18
         width: 67
         height: 91
       alignment: 0
@@ -154,8 +154,8 @@ TextureImporter:
     - name: anim_walk_5
       rect:
         serializedVersion: 2
-        x: 770
-        y: 12
+        x: 778
+        y: 19
         width: 67
         height: 91
       alignment: 0
@@ -173,8 +173,8 @@ TextureImporter:
     - name: anim_walk_6
       rect:
         serializedVersion: 2
-        x: 920
-        y: 11
+        x: 928
+        y: 18
         width: 67
         height: 92
       alignment: 0
